@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  /* border:1px solid; */
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+}
+
+:root {
+  --primary-blue: #07285e;
+  --secondary-blue: #003f88;
+  --primary-red: #7f1e34;
+  --secondary-red: #700030;
+}
+
+/* NAVBAR */
+/* nav {
+  position: fixed;
+  background: linear-gradient(-160deg, #07285e 30%, #7f1e34);
+  width: 100%;
+  padding: 1em;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 5rem;
+}
+nav ul a {
+  font-size: clamp(1.3rem, 2vw, 2rem);
+}
+nav li a:hover {
+  text-decoration: underline;
+} */
+nav {
+  position: fixed;
+  background: linear-gradient(-160deg, #07285e 30%, #7f1e34 90%);
+  width: 100%;
+  padding: 1rem 2rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+  gap: 3rem;
+  padding: 0;
+}
+
+nav ul a {
+  font-size: clamp(1.1rem, 1.8vw, 1.8rem);
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 0.8rem;
+  position: relative;
+  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+}
+
+nav li a:hover {
+  color: #ffd700;
+}
+
+/* Custom animated underline effect */
+nav li a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px; /* Thickness of the underline */
+  background: #ffd700; /* Color of the underline */
+  left: 50%; /* Start from the center */
+  bottom: 0;
+  transform: translateX(-50%);
+  transition: width 0.3s ease-in-out; /* Smooth width animation */
+}
+
+nav li a:hover::after {
+  width: calc(
+    100% - 1rem
+  ); /* Extend to almost full width on hover (accounting for padding) */
+}
+
+/* Optional: Active link styling (if you have a way to apply an 'active' class) */
+nav li a.active {
+  color: #ffd700; /* Active link glows */
+  text-decoration: underline; /* Always underlined if active */
+}
+/* WELCOME */
+
+#welcome-section {
+  background: linear-gradient(
+      -10deg,
+      #07285e 30%,
+      rgba(237, 202, 216, 0) 75%,
+      #7f1e34
+    ),
+    radial-gradient(circle, #700030 30%, #003f88 100%);
+
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 48px;
+  color: #ffff;
+}
+#welcome-section h1 {
+  font-size: 4rem;
+  text-align: center;
+}
+#welcome-section p {
+  font-size: 2rem;
+}
+
+/* PROJECTS */
+#projects {
+  background-color: var(--primary-blue);
+  width: 100vw;
+  min-height: 100vh;
+  border-top: 1px solid gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+#projects h2 {
+  font-size: 2rem;
+  color: #ffff;
+  text-decoration: underline;
+  padding: 1em;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+#projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 80%;
+  max-width: 1200px;
+}
+#projects li {
+  background-color: var(--secondary-blue);
+  border: 0.5px solid gray;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 300px;
+  max-width: 400px;
+  margin: 0;
+}
+
+#projects li a {
+  display: block;
+  padding: 1rem;
+  color: #ffff;
+  font-size: 1.2rem;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  min-height: 80px;
+  box-sizing: border-box;
+}
+
+#projects li a:hover {
+  background-color: var(--primary-blue);
+  color: white;
+  text-decoration: none;
+}
+
+#projects li a::after {
+  content: "»";
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-left: 10px;
+  transition: color 0.3s ease;
+}
+
+#projects li a:hover::after {
+  color: white;
+}
+
+#projects li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* CONTACT */
+#contact {
+  width: 100vw;
+  height: 80vh;
+  background-color: var(--secondary-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#contact h3 {
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 3rem;
+}
+
+#profile-link img {
+  width: 45px;
+}
+#profile-link img:hover {
+  box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.15);
+}
+
+/* FOOTER */
+
+/* footer{
+  background-color:var(--primary-red);
+  width:100vw;
+  height:20vh;
+  color:gray;
+  
+} */
+
+@media only screen and (max-width: 500px) {
+  h1,
+  h3 {
+    font-size: 3rem;
+  }
+}

@@ -1,0 +1,40 @@
+.aboutus-page {
+  width: 100%;
+  background-color: rgb(182 216 253);
+  display: flex;
+  justify-content: center;
+}
+
+.aboutus-main {
+  width: 90%;
+  background-color: rgb(182 216 253);
+}
+.aboutths {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2em;
+  width: 90%;
+  margin: 4em;
+}
+.aboutths-right {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  line-height: 1.4em;
+}
+.aboutfounder {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 90%;
+  column-gap: 2em;
+  margin: 4em;
+}
+.aboutfounder-left {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  justify-content: center;
+  line-height: 1.4em;
+  margin: 1em 0;
+}

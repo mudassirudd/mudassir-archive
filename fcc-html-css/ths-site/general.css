@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media only screen and (max-width: 1190px) {
+  .hero-bottom {
+    margin-top: 10em;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .founder {
+    width: 65%;
+    margin: 0 0 0 4em;
+  }
+  .hero-left {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    position: relative;
+    align-items: center;
+    text-align: center;
+  }
+
+  .rating-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+  }
+  .rating-top > div > img {
+    width: 50%;
+    margin-bottom: 0.5em;
+  }
+  .rating-top > div {
+    background-color: rgb(59, 58, 58, 0.4);
+    padding: 3% 4% 3% 4%;
+    border-radius: 10px;
+    margin: 0.2em;
+  }
+
+  .rating-bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 8em;
+    align-items: center;
+  }
+
+  .rating-bottom > div {
+    width: 65%;
+    text-align: center;
+    gap: 0.8em;
+    justify-content: center;
+  }
+
+  .confusedman {
+    display: none;
+  }
+
+  .advantage-right {
+    width: min(300px, 100%);
+  }
+
+  .advantage-right-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .withdirectiondiv {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+  }
+  .withoutdirectiondiv {
+    background-color: white;
+    padding: 1.5em;
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .services-bottom ul {
+    padding: 0;
+  }
+  .services-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+    overflow: auto;
+
+    white-space: nowrap;
+    scroll-behavior: smooth;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .testimonialsdiv {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(10rem, 14rem));
+    grid-template-rows: 1fr;
+    column-gap: 2em;
+    row-gap: 3em;
+  }
+
+  .services-btns {
+    border: none;
+    width: 60%;
+    border-radius: 20px;
+    padding: 0.7em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .aboutths {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+  }
+  .aboutths-right {
+    margin-top: 2em;
+  }
+
+  .aboutfounder {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 1em;
+  }
+  .aboutfounder-left {
+    margin-top: 2em;
+  }
+
+  .contactus-main-right {
+    display: none;
+  }
+
+  .contactus-main {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.477);
+  }
+
+  .contactus-main-left {
+    width: 100%;
+    border-radius: 0;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 3em 2em;
+    gap: 2em;
+  }
+  .contactus-page {
+    padding-bottom: 0;
+  }
+
+  .testimonialsdiv {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 16rem);
+    overflow: auto;
+    white-space: nowrap;
+    text-wrap: wrap;
+    scroll-behavior: smooth;
+  }
+
+  .testimonialsdiv > .grid > .witness {
+    width: fit-content;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .footer-mid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2em;
+    padding: 2em 1em;
+  }
+}

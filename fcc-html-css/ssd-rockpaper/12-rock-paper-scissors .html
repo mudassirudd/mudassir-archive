@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rock Paper Scissors</title>
+  </head>
+  <style>
+    body {
+      background-color: grey;
+      font-size: large;
+      font-weight: 555;
+    }
+    button {
+      background-color: darkgray;
+      border: none;
+      padding: 0.8rem;
+      border-radius: 20px;
+      cursor: pointer;
+    }
+  </style>
+  <body>
+    <p style="font-size: 2.5rem" class="title">Rock Paper Scissors</p>
+    <button class="move-button js-rock-btn">Rock</button>
+
+    <button class="move-button js-paper-btn">Paper</button>
+
+    <button class="move-button js-scissors-btn">Scissors</button>
+
+    <p style="font-size: x-large" class="js-result result"></p>
+    <p class="js-moves"></p>
+    <p class="js-score score"></p>
+
+    <button
+      onclick=" 
+     
+      showResetConfirmation();
+
+    "
+      class="reset-score-button"
+    >
+      Reset Score
+    </button>
+
+    <button class="js-autoplay-btn" onclick="autoPlay();">Auto play</button>
+
+    <div class="js-confirmation-div"></div>
+
+    <script src="12-rock-paper-scissors.js"></script>
+  </body>
+</html>

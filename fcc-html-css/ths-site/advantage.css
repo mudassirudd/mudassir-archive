@@ -1,0 +1,50 @@
+.advantage-page {
+  background-color: rgb(182 216 253);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.advantage-main {
+  background-color: rgb(182 216 253);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+}
+.advantage-right {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 4em 2em 4em 2em;
+}
+.withdirectiondiv {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 500px;
+}
+
+.withoutdirectiondiv {
+  background-color: white;
+  padding: 1.5em;
+  border-radius: 10px;
+  width: 500px;
+}
+.withdirectiondiv div {
+  display: flex;
+  justify-self: center;
+  gap: 0.2em;
+}
+.withoutdirectiondiv div {
+  display: flex;
+  justify-self: center;
+  gap: 0.2em;
+}
+.withdirectiondiv p {
+  display: inline-block;
+  font-size: max(0.9rem, min(1vw, 1.8vw));
+}
+.withoutdirectiondiv p {
+  display: inline-block;
+  font-size: max(0.8rem, min(1vw, 1.8vw));
+}

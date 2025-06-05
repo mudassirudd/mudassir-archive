@@ -1,0 +1,26 @@
+.footer-page {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+.footer-main {
+  width: 90%;
+  background-color: black;
+}
+.footer-mid {
+  display: flex;
+  justify-content: space-between;
+  padding: 4em 3em 8em 3em;
+  gap: 2em;
+}
+.thsemail {
+  display: inline-block;
+  transition: text-decoration 2s;
+  font-size: clamp (1rem, 2.5vw, 3rem);
+}
+.thsemail:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
