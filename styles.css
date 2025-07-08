@@ -106,7 +106,7 @@ nav li a.active {
     ),
     radial-gradient(circle, #700030 30%, #003f88 100%);
 
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -126,7 +126,7 @@ nav li a.active {
 /* PROJECTS */
 #projects {
   background-color: var(--primary-blue);
-  width: 100vw;
+  width: 99vw;
   min-height: 100vh;
   border-top: 1px solid gray;
 
@@ -207,8 +207,8 @@ nav li a.active {
 
 /* CONTACT */
 #contact {
-  width: 100vw;
-  height: 80vh;
+  width: 99vw;
+  height: 99vh;
   background-color: var(--secondary-blue);
 
   display: flex;
