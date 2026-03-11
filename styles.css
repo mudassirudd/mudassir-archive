@@ -51,7 +51,7 @@ nav ul a {
 }
 
 nav li a:hover {
-  color: #ffd700;
+  color: #93c5fd;
 }
 
 nav li a::after {
@@ -59,7 +59,7 @@ nav li a::after {
   position: absolute;
   width: 0;
   height: 2px;
-  background: #ffd700;
+  background: #93c5fd;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -71,7 +71,7 @@ nav li a:hover::after {
 }
 
 nav li a.active {
-  color: #ffd700;
+  color: #93c5fd;
   text-decoration: underline;
 }
 
@@ -198,7 +198,7 @@ nav li a.active {
 }
 
 .project-tile:hover {
-  color: #ffd700;
+  color: #93c5fd;
 }
 
 /* Left side: name + desc + tags */
@@ -221,7 +221,7 @@ nav li a.active {
 }
 
 .project-tile:hover .tile-desc {
-  color: rgba(255, 215, 0, 0.8);
+  color: rgba(147, 197, 253, 0.85);
 }
 
 /* Tag pills */
@@ -243,8 +243,8 @@ nav li a.active {
 }
 
 .project-tile:hover .tag {
-  background: rgba(255, 215, 0, 0.18);
-  color: #ffd700;
+  background: rgba(147, 197, 253, 0.18);
+  color: #93c5fd;
 }
 
 /* Arrow chevron */
@@ -257,7 +257,7 @@ nav li a.active {
 }
 
 .project-tile:hover .tile-arrow {
-  color: #ffd700;
+  color: #93c5fd;
 }
 
 /* CONTACT */
