@@ -1,9 +1,13 @@
 * {
   margin: 0;
   box-sizing: border-box;
-  /* border:1px solid; */
   font-family: "Inter", sans-serif;
 }
+
+body {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #ffff;
@@ -17,27 +21,6 @@ a {
 }
 
 /* NAVBAR */
-/* nav {
-  position: fixed;
-  background: linear-gradient(-160deg, #07285e 30%, #7f1e34);
-  width: 100%;
-  padding: 1em;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-nav ul {
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  gap: 5rem;
-}
-nav ul a {
-  font-size: clamp(1.3rem, 2vw, 2rem);
-}
-nav li a:hover {
-  text-decoration: underline;
-} */
 nav {
   position: fixed;
   background: linear-gradient(-160deg, #07285e 30%, #7f1e34 90%);
@@ -64,39 +47,35 @@ nav ul a {
   color: #ffffff;
   padding: 0.5rem 0.8rem;
   position: relative;
-  transition: color 0.3s ease-in-out; /* Smooth color transition on hover */
+  transition: color 0.3s ease-in-out;
 }
 
 nav li a:hover {
   color: #ffd700;
 }
 
-/* Custom animated underline effect */
 nav li a::after {
   content: "";
   position: absolute;
   width: 0;
-  height: 2px; /* Thickness of the underline */
-  background: #ffd700; /* Color of the underline */
-  left: 50%; /* Start from the center */
+  height: 2px;
+  background: #ffd700;
+  left: 50%;
   bottom: 0;
   transform: translateX(-50%);
-  transition: width 0.3s ease-in-out; /* Smooth width animation */
+  transition: width 0.3s ease-in-out;
 }
 
 nav li a:hover::after {
-  width: calc(
-    100% - 1rem
-  ); /* Extend to almost full width on hover (accounting for padding) */
+  width: calc(100% - 1rem);
 }
 
-/* Optional: Active link styling (if you have a way to apply an 'active' class) */
 nav li a.active {
-  color: #ffd700; /* Active link glows */
-  text-decoration: underline; /* Always underlined if active */
+  color: #ffd700;
+  text-decoration: underline;
 }
-/* WELCOME */
 
+/* WELCOME */
 #welcome-section {
   background: linear-gradient(
       -10deg,
@@ -106,7 +85,7 @@ nav li a.active {
     ),
     radial-gradient(circle, #700030 30%, #003f88 100%);
 
-  width: 99vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -115,10 +94,13 @@ nav li a.active {
   margin-top: 48px;
   color: #ffff;
 }
+
 #welcome-section h1 {
   font-size: 4rem;
   text-align: center;
+  line-height: 1.2;
 }
+
 #welcome-section p {
   font-size: 2rem;
 }
@@ -126,7 +108,7 @@ nav li a.active {
 /* PROJECTS */
 #projects {
   background-color: var(--primary-blue);
-  width: 99vw;
+  width: 100%;
   min-height: 100vh;
   border-top: 1px solid gray;
 
@@ -134,9 +116,10 @@ nav li a.active {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 3rem 0 4rem;
 }
-#projects h2 {
+
+#projects > h2 {
   font-size: 2rem;
   color: #ffff;
   text-decoration: underline;
@@ -144,19 +127,47 @@ nav li a.active {
   text-align: center;
   margin-bottom: 1rem;
 }
-#projects ul {
+
+/* Projects grid container */
+#projects-grid {
+  width: 80%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* Category section */
+.category-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.category-title {
+  font-size: 1.8rem;
+  color: #ffffff;
+  text-decoration: underline;
+  text-align: center;
+  padding: 0.5em 1em;
+  width: 100%;
+}
+
+/* Tile list */
+.tiles-list {
   list-style: none;
   padding: 0;
   margin: 0;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  width: 80%;
-  max-width: 1200px;
+  width: 100%;
 }
-#projects li {
+
+/* Individual tile card */
+.tile-item {
   background-color: var(--secondary-blue);
   border: 0.5px solid gray;
   border-radius: 8px;
@@ -165,50 +176,94 @@ nav li a.active {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   flex: 1 1 300px;
   max-width: 400px;
-  margin: 0;
 }
 
-#projects li a {
-  display: block;
-  padding: 1rem;
-  color: #ffff;
-  font-size: 1.2rem;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-  min-height: 80px;
-  box-sizing: border-box;
-}
-
-#projects li a:hover {
-  background-color: var(--primary-blue);
-  color: white;
-  text-decoration: none;
-}
-
-#projects li a::after {
-  content: "»";
-  font-size: 1.5rem;
-  color: rgba(255, 255, 255, 0.7);
-  margin-left: 10px;
-  transition: color 0.3s ease;
-}
-
-#projects li a:hover::after {
-  color: white;
-}
-
-#projects li:hover {
+.tile-item:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+/* Anchor fills the entire tile */
+.project-tile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 1rem;
+  color: #ffffff;
+  text-decoration: none;
+  min-height: 100px;
+  box-sizing: border-box;
+  height: 100%;
+  gap: 0.5rem;
+}
+
+.project-tile:hover {
+  color: #ffd700;
+}
+
+/* Left side: name + desc + tags */
+.tile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.tile-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.tile-desc {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.4;
+}
+
+.project-tile:hover .tile-desc {
+  color: rgba(255, 215, 0, 0.8);
+}
+
+/* Tag pills */
+.tile-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.12);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 999px;
+  letter-spacing: 0.02em;
+}
+
+.project-tile:hover .tag {
+  background: rgba(255, 215, 0, 0.18);
+  color: #ffd700;
+}
+
+/* Arrow chevron */
+.tile-arrow {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.3s ease;
+  flex-shrink: 0;
+  padding-top: 0.1rem;
+}
+
+.project-tile:hover .tile-arrow {
+  color: #ffd700;
+}
+
 /* CONTACT */
 #contact {
-  width: 99vw;
-  height: 99vh;
+  width: 100%;
+  min-height: 100vh;
   background-color: var(--secondary-blue);
 
   display: flex;
@@ -221,35 +276,68 @@ nav li a.active {
 #contact h3 {
   font-size: 3.5rem;
   text-align: center;
+  color: #ffffff;
 }
 
 .contact-icons {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   gap: 3rem;
 }
 
-#profile-link img {
-  width: 45px;
+.profile-link {
+  min-width: 48px;
+  min-height: 48px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
-#profile-link img:hover {
+
+.profile-link img {
+  width: 52px;
+}
+
+.profile-link img:hover {
   box-shadow: 0 8px 16px -4px rgba(0, 0, 0, 0.15);
 }
 
 /* FOOTER */
+footer {
+  background-color: var(--primary-blue);
+  width: 100%;
+  height: 4px;
+}
 
-/* footer{
-  background-color:var(--primary-red);
-  width:100vw;
-  height:20vh;
-  color:gray;
-  
-} */
+/* RESPONSIVE — tablet */
+@media only screen and (max-width: 768px) {
+  #welcome-section h1 {
+    font-size: 2.5rem;
+  }
+  #welcome-section p {
+    font-size: 1.4rem;
+  }
+  #projects-grid {
+    width: 95%;
+  }
+  nav ul {
+    gap: 1.5rem;
+  }
+  #contact h3 {
+    font-size: 2.5rem;
+  }
+}
 
+/* RESPONSIVE — mobile */
 @media only screen and (max-width: 500px) {
   h1,
   h3 {
-    font-size: 3rem;
+    font-size: 2rem;
+  }
+  nav ul {
+    gap: 0.8rem;
+  }
+  .contact-icons {
+    gap: 1.5rem;
   }
 }
