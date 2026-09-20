@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>VapesOz — ecommerce storefront | Mudassir Uddin Ahmed</title>
+    <meta
+      name="description"
+      content="Case study: a WooCommerce storefront for an Australian retailer — custom theme, payment gateway integration and a product catalogue the owner maintains without a developer."
+    />
+    <link rel="canonical" href="https://mudassirudd.github.io/mudassir-archive/work/vapesoz/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="VapesOz — ecommerce storefront" />
+    <meta
+      property="og:description"
+      content="A WooCommerce store that takes real payments, with a catalogue the owner can run without calling a developer."
+    />
+    <meta property="og:url" content="https://mudassirudd.github.io/mudassir-archive/work/vapesoz/" />
+    <meta property="og:image" content="https://mudassirudd.github.io/mudassir-archive/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="../../index.html">
+          <span class="nav__brand-mark" aria-hidden="true">M</span>
+          <span>Mudassir Uddin Ahmed</span>
+        </a>
+        <nav class="nav__links" data-open="false" aria-label="Main">
+          <a href="../../index.html#work">Work</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+    ==========================================================================
+    ⚠  BEFORE YOU PUBLISH THIS PAGE
+    ==========================================================================
+    Same rules as the Kirana case study. Every visible TODO block is a gap
+    only you can fill. No numbers you can't produce evidence for — especially
+    on this one, where "increased sales by X%" is the tempting lie and the
+    easiest to get caught on, because the client can contradict it.
+
+    Also confirm before publishing:
+      • That the client is happy to be named and linked. If not, set
+        confidential: true on the project in index.html and use
+        "Australian ecommerce retailer" throughout this page instead.
+    ==========================================================================
+    -->
+
+    <main id="main" class="cs">
+      <div class="container container--narrow">
+        <a class="cs__back" href="../../index.html#work">All work</a>
+
+        <h1 class="cs__title">VapesOz — ecommerce storefront</h1>
+        <p class="cs__standfirst">
+          An Australian retailer needed a store that takes money reliably and a
+          catalogue they could run themselves. I built the theme, wired up the
+          payment gateway, and structured the products so adding a new one
+          doesn't require a developer.
+        </p>
+
+        <dl class="cs__facts">
+          <div class="cs__fact">
+            <dt>Client</dt>
+            <dd>Australian retailer</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Year</dt>
+            <dd>2024</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Role</dt>
+            <dd>Sole developer</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Type</dt>
+            <dd>Ecommerce build</dd>
+          </div>
+        </dl>
+
+        <div class="chips" style="margin-top: var(--sp-5)">
+          <span class="chip">WordPress</span>
+          <span class="chip">WooCommerce</span>
+          <span class="chip">PHP</span>
+          <span class="chip">Custom theme</span>
+          <span class="chip">Payment gateway</span>
+        </div>
+
+        <div class="cs__actions">
+          <a
+            class="btn btn--primary"
+            href="https://vapesoz.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Visit the store ↗</a
+          >
+          <a class="btn btn--ghost" href="../../index.html#contact">Start a project</a>
+        </div>
+
+        <div class="cs__body">
+          <h2>The situation</h2>
+
+          <div class="todo">
+            <strong>TODO — write two or three sentences of context.</strong>
+            What did they have before? No site at all, or something that wasn't
+            working? Were they selling somewhere else — a marketplace, social
+            media, in person — and what specifically wasn't working about it?
+            Write it the way the owner would describe it, not the way a
+            developer would.
+          </div>
+
+          <h2>What I built</h2>
+          <ul>
+            <li>
+              <strong>A custom theme</strong> rather than a purchased one, so the
+              layout matches how their catalogue is actually organised instead
+              of how a template author assumed it would be.
+            </li>
+            <li>
+              <strong>Payment gateway integration</strong> — configured, tested
+              against real transactions, and verified end to end so orders
+              actually arrive rather than silently failing at checkout.
+            </li>
+            <li>
+              <strong>A structured product catalogue</strong> with categories and
+              attributes set up so products stay findable as the range grows.
+            </li>
+            <li>
+              <strong>Handover to the owner</strong> — they add products, change
+              prices and run promotions without me in the loop.
+            </li>
+          </ul>
+
+          <div class="todo">
+            <strong>TODO — correct and extend.</strong> Which gateway? Did you
+            handle shipping rules, tax, or age verification? Any integrations —
+            email, inventory, analytics? Did you migrate existing products from
+            somewhere? Each concrete detail here is worth more than a paragraph
+            of adjectives.
+          </div>
+
+          <h2>Decisions and trade-offs</h2>
+
+          <div class="decision">
+            <p class="decision__title">WooCommerce rather than a custom build</p>
+            <p>
+              I could have built this as a custom application. I didn't, because
+              the client's actual constraint wasn't the software — it was that
+              they needed to change prices on a Sunday night without calling
+              anyone. WooCommerce gives them an admin they already half
+              understand, a payment ecosystem that's already been through
+              compliance, and no dependency on me staying reachable.
+            </p>
+            <p class="decision__cost">
+              <strong>The cost:</strong> plugin surface area and update
+              maintenance, and less control over performance than I'd have with
+              something I wrote. For this business that was clearly the right
+              trade — a custom storefront they can't operate is a worse product
+              than a conventional one they can.
+            </p>
+          </div>
+
+          <div class="decision">
+            <p class="decision__title">A custom theme rather than a premium one</p>
+            <p>
+              Premium themes are faster to stand up and slower to live with —
+              they arrive with page builders and options panels you end up
+              fighting. Building the theme meant the markup matched the
+              catalogue structure rather than being bent around it.
+            </p>
+            <p class="decision__cost">
+              <strong>The cost:</strong> more of my time up front, and no
+              third-party support to fall back on.
+            </p>
+          </div>
+
+          <div class="todo">
+            <strong>TODO — verify both of these are the decisions you actually
+            made</strong>, and add any others. If you inherited a constraint
+            rather than choosing it, say that instead — inherited constraints
+            handled well is also an engineering story, and a more honest one.
+          </div>
+
+          <h2>What I'd change</h2>
+
+          <div class="todo">
+            <strong>TODO — two or three bullets.</strong> What would you do
+            differently knowing what you know now? This section pre-empts the
+            critique a reviewer is already forming and it's what separates a
+            case study from a brochure. Being able to criticise your own work
+            specifically is the strongest signal on the page.
+          </div>
+
+          <h2>Outcome</h2>
+          <p>The store is live and processing orders.</p>
+
+          <div class="todo">
+            <strong>TODO — and be careful here.</strong> Only write a number if
+            you can produce evidence for it on request. The client can
+            contradict anything you claim about their sales, which makes this
+            the single riskiest sentence on your whole site.
+            <br /><br />
+            Safe things you can say without any analytics access: how long it's
+            been running, whether they're still using it, whether they came back
+            with more work, whether they referred anyone. "They've been running
+            it themselves for over a year and came back for X" is more
+            persuasive than a percentage, and it's true.
+          </div>
+        </div>
+
+        <div class="cs__cta">
+          <h2>Need a store that actually takes money?</h2>
+          <p>
+            Tell me what you sell and how you're selling it now. If WooCommerce
+            is the wrong answer for you, I'll tell you that too.
+          </p>
+          <div class="cs__cta-actions">
+            <a class="btn btn--primary" href="../../index.html#contact">Start a project →</a>
+            <a class="btn btn--secondary" href="../../index.html#work">See other work</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Mudassir Uddin Ahmed</span>
+          <a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>

@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# Practice/demo builds — real pages only in the index, please.
+Disallow: /fcc-html-css/ths-site/
+
+Sitemap: https://mudassirudd.github.io/mudassir-archive/sitemap.xml

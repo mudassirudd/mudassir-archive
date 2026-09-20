@@ -3,295 +3,1164 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
-      rel="stylesheet"
+
+    <title>Mudassir Uddin Ahmed — Software Engineer</title>
+    <meta
+      name="description"
+      content="Software engineer building full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running. Selected client work and case studies."
+    />
+    <meta name="author" content="Mudassir Uddin Ahmed" />
+
+    <!-- TODO: if you buy mudassirudd.dev, change SITE_URL below and every
+         absolute URL in this head block to the new domain. -->
+    <link rel="canonical" href="https://mudassirudd.github.io/mudassir-archive/" />
+
+    <!-- Open Graph / Twitter — without these, every link you paste into
+         WhatsApp or a LinkedIn DM previews as a blank grey box. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Mudassir Uddin Ahmed" />
+    <meta property="og:title" content="Mudassir Uddin Ahmed — Software Engineer" />
+    <meta
+      property="og:description"
+      content="Full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
+    />
+    <meta property="og:url" content="https://mudassirudd.github.io/mudassir-archive/" />
+    <meta
+      property="og:image"
+      content="https://mudassirudd.github.io/mudassir-archive/og-image.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Mudassir Uddin Ahmed — Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
+    />
+    <meta
+      name="twitter:image"
+      content="https://mudassirudd.github.io/mudassir-archive/og-image.png"
     />
 
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
-    <title>Mudassir's Archive</title>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Mudassir Uddin Ahmed",
+        "jobTitle": "Software Engineer",
+        "email": "mailto:mudassirudd@gmail.com",
+        "url": "https://mudassirudd.github.io/mudassir-archive/",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "addressCountry": "IN"
+        },
+        "worksFor": {
+          "@type": "Organization",
+          "name": "ZeezTech",
+          "url": "https://zeeztech.com/"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/mudassirudd/",
+          "https://github.com/mudassirudd"
+        ],
+        "knowsAbout": [
+          "Full-stack web development",
+          "React",
+          "TypeScript",
+          "Next.js",
+          "Node.js",
+          "PostgreSQL",
+          "MongoDB",
+          "Docker",
+          "AWS"
+        ]
+      }
+    </script>
   </head>
+
   <body>
-    <!-- NAVBAR -->
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <nav id="navbar">
-      <ul>
-        <li><a href="#welcome-section">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+    <!-- ===================== NAV ===================== -->
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="#top">
+          <span class="nav__brand-mark" aria-hidden="true">M</span>
+          <span>Mudassir Uddin Ahmed</span>
+        </a>
 
-    <!-- WELCOME -->
-
-    <section id="welcome-section">
-      <h1>Hey! I am Mudassir Uddin Ahmed</h1>
-      <p>a Full Stack Engineer.</p>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-      <h2>These are some of my projects</h2>
-      <div id="projects-grid"></div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact">
-      <h3>Lets Collaborate!</h3>
-
-      <div class="contact-icons">
-        <a
-          class="profile-link"
-          target="_blank"
-          href="https://www.linkedin.com/in/mudassirudd/"
+        <button
+          class="nav__toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+          aria-label="Toggle navigation menu"
         >
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-plain.svg"
-        /></a>
-        <a
-          class="profile-link"
-          target="_blank"
-          href="https://github.com/mudassirudd"
-        >
-          <img src="https://www.svgrepo.com/show/512317/github-142.svg"
-        /></a>
-        <a
-          class="profile-link"
-          target="_blank"
-          href="https://www.freecodecamp.org/Mudassirudd"
-        >
-          <img src="https://www.svgrepo.com/show/314005/free-code-camp.svg"
-        /></a>
-        <a class="profile-link" href="mailto:mudassirudd@gmail.com">
-          <img src="https://www.svgrepo.com/show/502648/email.svg"
-        /></a>
+          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="3" y1="7" x2="21" y2="7" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="17" x2="21" y2="17" />
+          </svg>
+          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <line x1="5" y1="5" x2="19" y2="19" /><line x1="19" y1="5" x2="5" y2="19" />
+          </svg>
+        </button>
+
+        <nav id="nav-links" class="nav__links" data-open="false" aria-label="Main">
+          <a href="#work">Work</a>
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#working-together">Working together</a>
+          <a href="#contact">Contact</a>
+          <!-- Résumé link is injected here by JS when RESUME_URL is set -->
+        </nav>
       </div>
-    </section>
+    </header>
 
-    <footer>
-      <div></div>
+    <main id="main">
+      <!-- ===================== HERO ===================== -->
+      <section id="top" class="hero">
+        <div class="container">
+          <h1 class="hero__title">
+            Mudassir Uddin Ahmed —
+            <span class="accent">Software Engineer</span>
+          </h1>
+
+          <p class="hero__lede">
+            I build web applications for businesses that have outgrown
+            spreadsheets, phone calls and WhatsApp — ordering systems,
+            storefronts, internal tools.
+            <strong>Designed, built, deployed and kept running.</strong>
+          </p>
+
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="#contact">Start a project →</a>
+            <a class="btn btn--secondary" href="#work">See the work</a>
+          </div>
+
+          <p class="hero__meta">
+            <span>Hyderabad, India · IST (UTC+5:30)</span>
+            <a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a>
+            <a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+            <a href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================== TRUST STRIP ===================== -->
+      <div class="trust">
+        <div class="container trust__inner">
+          <span class="trust__label">Built for</span>
+          <ul class="trust__items">
+            <li><a href="https://xpressprinting247.com/" target="_blank" rel="noopener noreferrer">Xpress Printing 24/7</a></li>
+            <li><a href="https://shamsconventionhyd.in/" target="_blank" rel="noopener noreferrer">Shams Convention</a></li>
+            <li><a href="https://madinahotel.in/" target="_blank" rel="noopener noreferrer">Madina Hotel</a></li>
+            <li><a href="https://vapesoz.com/" target="_blank" rel="noopener noreferrer">VapesOz</a></li>
+            <li><a href="https://www.mehvishguesthouse.in/" target="_blank" rel="noopener noreferrer">Mehvish Guest House</a></li>
+            <li><a href="https://www.teatimesanytime.com/" target="_blank" rel="noopener noreferrer">TeaTimesAnytime</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ===================== WORK ===================== -->
+      <section id="work" class="section">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow">Selected work</span>
+            <h2 class="section__title">Systems I designed, built and deployed</h2>
+            <p class="section__lede">
+              Every project below shipped to real users. Where I was the only
+              engineer, I say so — schema, API, interface and deployment.
+            </p>
+          </div>
+
+          <div id="work-groups"></div>
+
+          <!-- Inline CTA — one line, deliberately not a full-width band -->
+          <div class="work__cta">
+            <p>
+              <strong>Building something similar?</strong>
+              Tell me what you're trying to do and I'll tell you honestly
+              whether I'm the right person for it.
+            </p>
+            <a class="btn btn--primary" href="#contact">Start a project →</a>
+          </div>
+
+          <!-- Learning archive: collapsed by default, zero cards.
+               These are course and certification builds. They stay reachable
+               but they don't compete with client systems for attention. -->
+          <details class="archive">
+            <summary class="archive__summary">
+              <span id="archive-label">Learning archive</span>
+            </summary>
+            <div class="archive__body">
+              <div id="archive-groups"></div>
+              <p class="archive__note">
+                Course and certification work, kept here for completeness. The
+                freeCodeCamp set is the JavaScript Algorithms &amp; Data
+                Structures certification; the React set is from Scrimba's
+                React course. All still run — they're just not what I'd point
+                a client at.
+              </p>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <!-- ===================== ABOUT ===================== -->
+      <section id="about" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow">About</span>
+            <h2 class="section__title">How I work</h2>
+          </div>
+
+          <div class="about__body">
+            <p>
+              I start with how the business actually works — who touches an
+              order, where it gets written down, what goes wrong most often —
+              and then build the least complicated thing that fixes it.
+            </p>
+            <p>
+              <strong>I deploy and maintain what I build.</strong> Kirana has
+              been running on an AWS EC2 instance behind nginx, supervised by
+              PM2, since I shipped it. I'm the one who gets the call when it
+              misbehaves. That's the part most people skip, and it's the part
+              that decides whether software is an asset or a liability.
+            </p>
+            <p>
+              Sometimes the right answer isn't custom software at all. Some of
+              my work is WordPress, because an owner who needs to change prices
+              on a Sunday night is better served by a tool they can operate than
+              a bespoke one they can't. And on the print platform I deliberately
+              left out online payments, because the shop invoices — that feature
+              would have been for my portfolio, not for them.
+            </p>
+            <p>
+              You own everything I build: domain, source code, database,
+              records. No retainer, no licence, no dependency on me.
+            </p>
+
+            <!-- NOTE: naming ZeezTech here is a judgement call — see
+                 linkedin-copy.md. Swap for "a product engineering studio in
+                 Hyderabad" if you'd rather this page weren't findable by your
+                 employer next to a hire-me CTA. -->
+            <div class="about__now">
+              <span class="about__now-label">Currently</span>
+              DevOps Lead at
+              <a href="https://zeeztech.com/" target="_blank" rel="noopener noreferrer">ZeezTech</a>,
+              a product engineering studio in Hyderabad — working day to day in
+              TypeScript, Next.js, PostgreSQL and Docker.
+            </div>
+
+            <div class="about__links" id="about-links">
+              <a class="btn btn--secondary btn--sm" href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+              <a class="btn btn--secondary btn--sm" href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== STACK ===================== -->
+      <section id="stack" class="section">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow">Stack</span>
+            <h2 class="section__title">What I build with</h2>
+            <p class="section__lede">
+              Things I've shipped production code in — not everything I've ever
+              opened a tutorial for.
+            </p>
+          </div>
+
+          <!-- TODO: remove anything here you couldn't defend for ten minutes
+               in an interview. A short honest list beats a long one. -->
+          <div class="stack-grid">
+            <div class="stack-group">
+              <h3 class="stack-group__title">Frontend</h3>
+              <ul>
+                <li>React</li>
+                <li>TypeScript</li>
+                <li>Next.js</li>
+                <li>JavaScript (ES2022)</li>
+                <li>HTML &amp; CSS</li>
+                <li>Vite</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group__title">Backend</h3>
+              <ul>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>REST APIs</li>
+                <li>Authentication &amp; sessions</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group__title">Data</h3>
+              <ul>
+                <li>PostgreSQL</li>
+                <li>MongoDB</li>
+                <li>Prisma ORM</li>
+                <li>Schema design</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group__title">Infrastructure &amp; DevOps</h3>
+              <ul>
+                <li>AWS EC2</li>
+                <li>Docker</li>
+                <li>nginx (reverse proxy, TLS)</li>
+                <li>PM2</li>
+                <li>DNS configuration</li>
+                <li>Linux</li>
+                <li>Git &amp; GitHub</li>
+              </ul>
+            </div>
+            <div class="stack-group">
+              <h3 class="stack-group__title">Commerce &amp; CMS</h3>
+              <ul>
+                <li>WordPress</li>
+                <li>WooCommerce</li>
+                <li>Payment gateway integration</li>
+                <li>Technical &amp; local SEO</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== WORKING TOGETHER ===================== -->
+      <section id="working-together" class="section section--alt">
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow">Working together</span>
+            <h2 class="section__title">Three ways people usually bring me in</h2>
+            <p class="section__lede">
+              Whichever it is, you'll get a straight answer early — including
+              if I think you don't need what you're asking for.
+            </p>
+          </div>
+
+          <div class="engagements">
+            <article class="engagement">
+              <h3 class="engagement__title">Full-stack product build</h3>
+              <p class="engagement__desc">
+                A working application from an empty repository — data model,
+                API, interface, deployment, and the handover so you're not
+                locked to me.
+              </p>
+              <ul class="engagement__list">
+                <li>Internal tools and admin systems</li>
+                <li>Ordering and inventory platforms</li>
+                <li>Customer accounts and role-based access</li>
+              </ul>
+            </article>
+
+            <article class="engagement">
+              <h3 class="engagement__title">Ecommerce build and integration</h3>
+              <p class="engagement__desc">
+                A storefront that takes money reliably — catalogue, checkout,
+                payment gateway, and the boring configuration that determines
+                whether orders actually arrive.
+              </p>
+              <ul class="engagement__list">
+                <li>WooCommerce builds and custom themes</li>
+                <li>Payment gateway setup</li>
+                <li>Product catalogue and order flow</li>
+              </ul>
+            </article>
+
+            <article class="engagement">
+              <h3 class="engagement__title">Take over an existing codebase</h3>
+              <p class="engagement__desc">
+                Someone built it and left. I'll get it running, document what's
+                there, fix what's broken, and get it deployed somewhere you
+                control.
+              </p>
+              <ul class="engagement__list">
+                <li>Deployment and server setup</li>
+                <li>Bug fixing and feature work</li>
+                <li>Ongoing maintenance</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="engage__note">
+            <p>
+              Not sure which of these you need? Describe the problem in plain
+              language and I'll tell you what it'd actually take.
+            </p>
+            <div class="hero__actions" style="margin-top: 0" id="engage-actions">
+              <a class="btn btn--primary" href="#contact">Start a project →</a>
+              <!-- WhatsApp button injected by JS when WHATSAPP_NUMBER is set -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================== TESTIMONIALS =====================
+           This whole section stays hidden until the TESTIMONIALS array at the
+           bottom of this file has at least one entry. Only put real, approved
+           quotes in it — see testimonial-outreach.md for how to collect them. -->
+      <section id="testimonials" class="section" hidden>
+        <div class="container">
+          <div class="section__head">
+            <span class="section__eyebrow">Testimonials</span>
+            <h2 class="section__title">What clients said</h2>
+          </div>
+          <div class="quotes" id="quotes"></div>
+        </div>
+      </section>
+
+      <!-- ===================== CONTACT ===================== -->
+      <section id="contact" class="section section--alt">
+        <div class="container">
+          <div class="contact__grid">
+            <div>
+              <div class="section__head">
+                <span class="section__eyebrow">Contact</span>
+                <h2 class="section__title">Start a project</h2>
+                <p class="section__lede">
+                  Tell me what you're trying to build or fix. If I'm not the
+                  right person, I'll say so and point you somewhere better.
+                </p>
+              </div>
+
+              <div class="contact__channels" id="channels">
+                <a class="channel" href="mailto:mudassirudd@gmail.com">
+                  <svg class="channel__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m2 7 10 6 10-6" />
+                  </svg>
+                  <span>
+                    <span class="channel__label">Email</span>
+                    <span class="channel__value">mudassirudd@gmail.com</span>
+                  </span>
+                </a>
+
+                <a class="channel" href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">
+                  <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21h5.16V9.5H2.4V21zM9.5 9.5H14v1.57h.07c.63-1.13 2.17-2.32 4.46-2.32 4.77 0 5.65 3.02 5.65 6.95V21h-5.16v-4.95c0-1.18-.02-2.7-1.68-2.7-1.68 0-1.94 1.29-1.94 2.62V21H9.5V9.5z" />
+                  </svg>
+                  <span>
+                    <span class="channel__label">LinkedIn</span>
+                    <span class="channel__value">/in/mudassirudd</span>
+                  </span>
+                </a>
+
+                <a class="channel" href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">
+                  <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z" />
+                  </svg>
+                  <span>
+                    <span class="channel__label">GitHub</span>
+                    <span class="channel__value">@mudassirudd</span>
+                  </span>
+                </a>
+              </div>
+            </div>
+
+            <!-- No form. WhatsApp is the primary channel; the message is
+                 pre-filled so nobody has to work out how to open. -->
+            <div class="form">
+              <h3 class="cta-panel__title">Message me on WhatsApp</h3>
+              <p class="cta-panel__text">
+                Fastest way to reach me. The message opens pre-filled — just hit
+                send and tell me what you're working on.
+              </p>
+
+              <a
+                class="btn btn--primary btn--block btn--wa"
+                id="wa-primary"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18">
+                  <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" />
+                </svg>
+                Open WhatsApp
+              </a>
+
+              <p class="form__note">I reply within 24 hours, usually sooner.</p>
+
+              <div class="cta-panel__hint">
+                <strong>Helps me answer properly:</strong>
+                <ul>
+                  <li>What the business does</li>
+                  <li>What you're doing now that isn't working</li>
+                  <li>Roughly when you need it</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div>
+            <a class="nav__brand" href="#top">
+              <span class="nav__brand-mark" aria-hidden="true">M</span>
+              <span>Mudassir Uddin Ahmed</span>
+            </a>
+            <p class="footer__tagline">
+              Software engineer. Full-stack web applications, deployed and
+              maintained.
+            </p>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Site</h2>
+            <ul class="footer__list">
+              <li><a href="#work">Work</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#stack">Stack</a></li>
+              <li><a href="#working-together">Working together</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="footer__heading">Elsewhere</h2>
+            <ul class="footer__list" id="footer-elsewhere">
+              <li><a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a></li>
+              <li><a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub ↗</a></li>
+              <li><a href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="footer__fundamentals">
+          <strong>Fundamentals —</strong>
+          freeCodeCamp JavaScript Algorithms &amp; Data Structures: seven
+          certification projects including a cash register, Roman numeral
+          converter, regex telephone validator and a text-based RPG. Plus
+          <em>50 Days · 50 Projects</em>, a fifty-day vanilla JavaScript build
+          streak. All listed in the
+          <a href="#work">learning archive</a> above and on
+          <a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub</a>.
+        </p>
+
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Mudassir Uddin Ahmed</span>
+          <span>Built by hand. No framework, no build step.</span>
+        </div>
+      </div>
     </footer>
 
     <script>
-      /*
-       * ============================================================
-       * HOW TO ADD A NEW PROJECT
-       * ============================================================
-       * 1. Find the PROJECTS array below.
-       * 2. Copy this template and paste it inside the array:
-       *
-       *   {
-       *     name: "Project Name",
-       *     url:  "https://your-url.com",
-       *     desc: "One or two sentences about what it does.",
-       *     tags: ["Tag1", "Tag2", "Tag3"],
-       *     category: "freelance"
-       *   },
-       *
-       * 3. Save the file. Done — the page builds itself.
-       *
-       * Available categories: freelance | react | 50d50p | fcc
-       * To add a new category: add an entry to the CATEGORIES array
-       * below, then use that new id as the category on your projects.
-       * ============================================================
-       */
+      /* ======================================================================
+       * CONFIG — set these and the page wires itself up.
+       * Anything left as an empty string simply hides the feature it powers.
+       * ==================================================================== */
+      const CONFIG = {
+        // International format, digits only: 91 (India) + your number.
+        whatsappNumber: '918374823091',
 
-      const PROJECTS = [
-        // ── FREELANCE ──────────────────────────────────────────────
-        {
-          name: 'Workout Buddy',
-          url: 'https://workoutbuddy-ten.vercel.app/',
-          desc: 'A fitness tracker that lets users log exercises and monitor weekly progress.',
-          tags: ['React', 'Vite', 'Vercel'],
-          category: 'freelance',
-        },
-        {
-          name: 'Kirana',
-          url: 'http://35.169.120.101/',
-          desc: 'Full-stack grocery management app deployed on AWS EC2 with nginx reverse proxy and PM2 process manager.',
-          tags: [
-            'MongoDB',
-            'Express',
-            'React',
-            'Node',
-            'AWS EC2',
-            'nginx',
-            'PM2',
-          ],
-          category: 'freelance',
-        },
-        {
-          name: 'VapesOz',
-          url: 'https://vapesoz.com/',
-          desc: 'WordPress ecommerce store for an Australian vaping retailer — custom theme, payment gateway, and product catalog.',
-          tags: ['WordPress', 'WooCommerce', 'eCommerce'],
-          category: 'freelance',
-        },
-        {
-          name: 'Mehvish Guest House',
-          url: 'https://www.mehvishguesthouse.in/',
-          desc: 'Complete digital presence — website, WhatsApp Business, Google Business Profile, social media, and local SEO.',
-          tags: ['WordPress', 'SEO', 'Google Business', 'WhatsApp'],
-          category: 'freelance',
-        },
-        {
-          name: 'TeaTimeAnyTime',
-          url: 'https://www.teatimesanytime.com/',
-          desc: 'Brand website for a tea products business with product showcase and order inquiry flow.',
-          tags: ['WordPress', 'eCommerce', 'Branding'],
-          category: 'freelance',
-        },
+        // Pre-filled first message. Keep it short — people edit it.
+        whatsappMessage:
+          "Hi Mudassir, I saw your portfolio and I'd like to talk about a project.",
 
-        // ── REACT ──────────────────────────────────────────────────
-        {
-          name: 'Assembly: End Game',
-          url: 'https://assembly-game-tau.vercel.app/',
-          desc: 'A word-guessing game where wrong answers eliminate programming languages — save them all before Assembly is left.',
-          tags: ['React', 'useState', 'Game Logic', 'Vite'],
-          category: 'react',
-        },
-        {
-          name: 'Chef Claude',
-          url: 'https://chefclaude-one.vercel.app/',
-          desc: 'Enter ingredients you have on hand and get AI-generated recipe suggestions powered by Claude.',
-          tags: ['React', 'Anthropic API', 'AI', 'Vite'],
-          category: 'react',
-        },
-        {
-          name: 'Meme Generator',
-          url: 'https://memegenerator-tawny-psi.vercel.app/',
-          desc: 'Pulls a random image from the Imgflip API and lets you overlay custom top and bottom text.',
-          tags: ['React', 'REST API', 'useState', 'useEffect'],
-          category: 'react',
-        },
-        {
-          name: 'Tenzies',
-          url: 'https://tenzies-six-orcin.vercel.app/',
-          desc: 'Roll dice and freeze matching values until all ten dice show the same face — classic Tenzies game.',
-          tags: ['React', 'useState', 'Game Logic'],
-          category: 'react',
-        },
+        // Path or URL to your CV. Leave empty to hide the résumé links.
+        resumeUrl: '',
 
-        // ── 50 DAYS 50 PROJECTS ────────────────────────────────────
-        {
-          name: '50 Days · 50 Projects',
-          url: 'https://mudassirudd.github.io/50d-50p/',
-          desc: 'A challenge collection of 50 small HTML/CSS/JS projects built over 50 days to sharpen front-end fundamentals.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'GitHub Pages'],
-          category: '50d50p',
-        },
-
-        // ── FREECODECAMP DSA ───────────────────────────────────────
-        {
-          name: 'Roleplaying Game',
-          url: 'fcc-html-css/roleplaying-game/index.html',
-          desc: 'A text-based RPG where you fight monsters, manage stats, and upgrade weapons — built with vanilla JS.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'DOM'],
-          category: 'fcc',
-        },
-        {
-          name: 'Music Player',
-          url: 'fcc-html-css/music-player/index.html',
-          desc: 'A functional music player UI with play/pause, skip, and shuffle controls built from scratch.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'Audio API'],
-          category: 'fcc',
-        },
-        {
-          name: 'Palindrome Checker',
-          url: 'fcc-html-css/palindrome-checker/index.html',
-          desc: 'Checks whether any input string reads the same forwards and backwards, ignoring punctuation and case.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'Regex'],
-          category: 'fcc',
-        },
-        {
-          name: 'Roman Numeral Converter',
-          url: 'fcc-html-css/roman-numeral-converter/index.html',
-          desc: 'Converts any integer up to 3999 into its correct Roman numeral representation.',
-          tags: ['HTML', 'CSS', 'Vanilla JS'],
-          category: 'fcc',
-        },
-        {
-          name: 'Telephone Number Validator',
-          url: 'fcc-html-css/number-validator/index.html',
-          desc: 'Validates US phone numbers in multiple formats using a regular expression.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'Regex'],
-          category: 'fcc',
-        },
-        {
-          name: 'Cash Register',
-          url: 'fcc-html-css/cash-register/',
-          desc: 'Calculates change due from a cash transaction and handles closed/insufficient funds edge cases.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'Algorithms'],
-          category: 'fcc',
-        },
-        {
-          name: 'RPG Creature Search',
-          url: 'fcc-html-css/rpg-creature-search/index.html',
-          desc: 'Search a custom creature database and display detailed stats for any matching entry.',
-          tags: ['HTML', 'CSS', 'Vanilla JS', 'Fetch API'],
-          category: 'fcc',
-        },
-      ]
-
-      // Controls display order and section headings.
-      // Change label here to rename a section. Reorder entries to reorder sections.
-      const CATEGORIES = [
-        { id: 'freelance', label: 'Freelance' },
-        { id: 'react', label: 'React' },
-        { id: '50d50p', label: '50 Days · 50 Projects' },
-        { id: 'fcc', label: 'freeCodeCamp DSA Projects' },
-      ]
-
-      // Reads PROJECTS and builds all HTML automatically. No need to touch this.
-      function renderProjects() {
-        const grid = document.getElementById('projects-grid')
-        if (!grid) return
-
-        CATEGORIES.forEach(({ id, label }) => {
-          const items = PROJECTS.filter((p) => p.category === id)
-          if (items.length === 0) return
-
-          const group = document.createElement('div')
-          group.className = 'category-group'
-
-          const heading = document.createElement('h2')
-          heading.className = 'category-title'
-          heading.textContent = label
-          group.appendChild(heading)
-
-          const ul = document.createElement('ul')
-          ul.className = 'tiles-list'
-
-          items.forEach((project) => {
-            const tagsHTML = project.tags
-              .map((t) => `<span class="tag">${t}</span>`)
-              .join('')
-
-            const isExternal = project.url.startsWith('http')
-            const targetAttr = isExternal
-              ? 'target="_blank" rel="noopener noreferrer"'
-              : ''
-
-            const li = document.createElement('li')
-            li.className = 'tile-item'
-            li.innerHTML = `
-              <a class="project-tile" href="${project.url}" ${targetAttr}>
-                <div class="tile-content">
-                  <span class="tile-name">${project.name}</span>
-                  <p class="tile-desc">${project.desc}</p>
-                  <div class="tile-tags">${tagsHTML}</div>
-                </div>
-                <span class="tile-arrow">»</span>
-              </a>`
-            ul.appendChild(li)
-          })
-
-          group.appendChild(ul)
-          grid.appendChild(group)
-        })
+        email: 'mudassirudd@gmail.com',
       }
 
-      renderProjects()
+      const WHATSAPP_URL = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`
+
+      /* ======================================================================
+       * HOW TO ADD A PROJECT
+       * ----------------------------------------------------------------------
+       * Copy this into the PROJECTS array. Only the starred fields are
+       * required — everything else is optional and can be filled in later.
+       *
+       *   {
+       *     id:           'slug',                   // * unique, used for anchors
+       *     name:         'Project Name',           // *
+       *     type:         'B2B ordering platform',  // * what KIND of system it is
+       *     client:       'Client Name',            //   omit for personal work
+       *     year:         2025,                     // *
+       *     status:       'live',                   // * live | offline | private | archived
+       *     summary:      'One or two sentences.',  // *
+       *     contribution: 'Sole engineer — schema, API, UI, deployment.',
+       *     capabilities: ['Customer accounts', 'Order history'],  // plain English
+       *     stack:        ['React', 'Node'],        // * technical
+       *     links: { live: '', repo: '', caseStudy: '', demoVideo: '' },  // *
+       *     linkNote:     'self-hosted · HTTP',     //   small caveat under the buttons
+       *     group:        'featured',               // * featured | client | product | learning
+       *     source:       'freeCodeCamp',           //   learning group only
+       *   }
+       *
+       * GROUPS control where a project renders:
+       *   featured → big card    client/product → compact row
+       *   learning → plain text inside the collapsed archive
+       * Array order is display order. Just move an entry to reorder it.
+       * ==================================================================== */
+
+      const PROJECTS = [
+        /* ── FEATURED ──────────────────────────────────────────────────── */
+        {
+          id: 'kirana',
+          name: 'Kirana',
+          type: 'Inventory & ordering system',
+          client: 'Grocery retail',
+          year: 2025,
+          // TODO: verify the EC2 instance is still up. If it isn't, change
+          // this to 'offline' and the live button disappears automatically.
+          status: 'live',
+          summary:
+            'A full-stack grocery management system replacing a paper stock book and WhatsApp order messages. Every order is now a record with a status, a timestamp and a customer attached to it.',
+          contribution:
+            'Sole engineer — data model, API, interface, server setup and ongoing maintenance.',
+          capabilities: [
+            'Role-based access — admin and staff see different things',
+            'Order lifecycle from placed to fulfilled',
+            'Product catalogue with stock levels',
+          ],
+          stack: ['MongoDB', 'Express', 'React', 'Node.js', 'Tailwind', 'AWS EC2', 'nginx', 'PM2'],
+          links: {
+            caseStudy: 'work/kirana/',
+            repo: 'https://github.com/mudassirudd/kirana',
+            live: 'http://35.169.120.101/',
+          },
+          linkNote: 'Live instance is self-hosted over plain HTTP — your browser will warn you.',
+          group: 'client',
+        },
+        {
+          id: 'xpress-printing',
+          name: 'Xpress Printing 24/7',
+          type: 'B2B ordering & quoting platform',
+          client: 'Print shop',
+          year: 2026,
+          status: 'live',
+          summary:
+            'Replaced a brochure site whose price list was uploaded as images in 2020. Every job used to start with a phone call and too many ended in a pricing dispute — now the customer configures the job and sees the price before they order.',
+          contribution:
+            'Sole engineer — catalogue, quoting logic, admin dashboard, deployment, and full handover. Built in under four weeks.',
+          capabilities: [
+            '220+ product catalogue with live quoting — price updates as size, quantity and finish change',
+            'Guest checkout, no account required',
+            'Admin dashboard covering the full order workflow, usable from a phone',
+            'Customer order history and automated status emails from the business’s own domain',
+          ],
+          outcome:
+            'Domain, source code, database and customer records all sit in accounts registered to the client. No retainer, no licence, no dependency on me.',
+          // TODO: add the actual stack (framework, database, email provider).
+          stack: ['Custom build', 'Admin dashboard', 'Transactional email', 'Managed infrastructure'],
+          links: {
+            caseStudy: 'work/xpress-printing/',
+            live: 'https://xpressprinting247.com/',
+          },
+          group: 'featured',
+        },
+        {
+          id: 'shams-convention',
+          name: 'Shams Convention',
+          type: 'Venue site — conversion & SEO',
+          client: 'Convention centre, Hyderabad',
+          year: 2026,
+          status: 'live',
+          summary:
+            'Venue sites get found and then lose people. This one is built around a single job: getting someone from "this looks nice" to "is my date free?" in as few taps as possible.',
+          contribution: 'Sole designer and developer — design, build and SEO, end to end.',
+          capabilities: [
+            'Call and WhatsApp buttons pinned to every mobile screen',
+            'Floating WhatsApp chat that follows you on desktop',
+            'Structured data for the venue, FAQ and gallery',
+            'Open Graph, sitemap and clean URLs from day one',
+          ],
+          // TODO: confirm the platform and add it here (WordPress? Next.js? static?)
+          stack: ['Schema.org JSON-LD', 'Open Graph', 'Technical SEO', 'Mobile-first'],
+          links: { live: 'https://shamsconventionhyd.in/' },
+          group: 'featured',
+        },
+        {
+          id: 'madina-hotel',
+          name: 'Madina Hotel',
+          type: 'Restaurant site, local SEO & paid search',
+          client: 'Biryani restaurant near the Charminar, serving since 1947',
+          year: 2026,
+          status: 'live',
+          summary:
+            'A place everyone in the Old City knows by name, and search engines barely knew at all. Built the site, then took on the SEO, then the Google Business Profile — which is what actually ranks for "biryani near me" — and now run their paid search.',
+          contribution:
+            'Sole developer and marketer — site, on-page SEO, Google Business Profile, Google Ads.',
+          capabilities: [
+            'Site structured around local search intent',
+            'Google Business Profile cleaned up and maintained',
+            'On-page technical SEO',
+            'Google Ads campaign, managed and tuned',
+          ],
+          outcome:
+            'Cost per click came down from ₹12.58 to ₹2.71 after rebuilding the keyword set. Whether that turns into people walking through the door is the number I am actually judging it on.',
+          stack: ['Local SEO', 'Google Business Profile', 'Google Ads', 'Technical SEO'],
+          links: {
+            caseStudy: 'work/madina-hotel/',
+            live: 'https://madinahotel.in/',
+          },
+          group: 'featured',
+        },
+
+        /* ── CLIENT DELIVERY ───────────────────────────────────────────── */
+        {
+          id: 'vapesoz-row',
+          name: 'VapesOz',
+          type: 'Ecommerce storefront',
+          client: 'Australian retailer',
+          year: 2024,
+          status: 'live',
+          summary:
+            'WooCommerce storefront taking real payments — custom theme, payment gateway integration and a catalogue the owner maintains without developer access.',
+          stack: ['WordPress', 'WooCommerce', 'PHP'],
+          links: { caseStudy: 'work/vapesoz/', live: 'https://vapesoz.com/' },
+          group: 'client',
+        },
+        {
+          id: 'mehvish',
+          name: 'Mehvish Guest House',
+          type: 'Web presence & local discovery',
+          client: 'Guest house',
+          year: 2024,
+          status: 'live',
+          summary:
+            'Website, WhatsApp Business and Google Business Profile set up as one system, so enquiries arrive in one place instead of three.',
+          stack: ['WordPress', 'Google Business Profile', 'WhatsApp Business', 'Local SEO'],
+          links: { live: 'https://www.mehvishguesthouse.in/' },
+          group: 'client',
+        },
+        {
+          id: 'teatimes',
+          name: 'TeaTimesAnytime',
+          type: 'Brand site & order enquiry',
+          client: 'Tea products business',
+          year: 2024,
+          status: 'live',
+          summary:
+            'A product showcase with an enquiry flow that turns a browse into a conversation — and a catalogue the owner runs entirely on their own.',
+          contribution: 'Sole designer and developer — brand presentation, catalogue and enquiry flow.',
+          capabilities: [
+            'Product showcase built around the range, not a template',
+            'Order enquiry flow straight from the product',
+            'Owner adds products and changes prices without calling me',
+          ],
+          stack: ['WordPress', 'Ecommerce', 'Branding'],
+          links: { live: 'https://www.teatimesanytime.com/' },
+          group: 'featured',
+        },
+
+        /* ── PRODUCT & EXPERIMENTS ─────────────────────────────────────── */
+        {
+          id: 'workout-buddy',
+          name: 'Workout Buddy',
+          type: 'Personal project',
+          year: 2025,
+          status: 'live',
+          summary:
+            'A fitness tracker for logging exercises and watching weekly progress. Built to get comfortable with client-side state that has to survive a refresh.',
+          stack: ['React', 'Vite', 'Vercel'],
+          links: { live: 'https://workoutbuddy-ten.vercel.app/' },
+          group: 'product',
+        },
+
+        /* ── LEARNING ARCHIVE ──────────────────────────────────────────── */
+        // NOTE on Chef Claude: a client-side React app calling the Anthropic
+        // API needs the key in the bundle, where anyone can read it in
+        // devtools. VERIFY THIS AND ROTATE THE KEY IF SO. Moving the call
+        // behind a serverless function would fix it — and would promote this
+        // from coursework to a real portfolio piece with a judgment story.
+        { id: 'chef-claude', name: 'Chef Claude', summary: 'Ingredient-based recipe suggestions via the Anthropic API.', links: { live: 'https://chefclaude-one.vercel.app/' }, group: 'learning', source: 'Scrimba React course' },
+        { id: 'assembly', name: 'Assembly: End Game', summary: 'Word-guessing game with elimination logic.', links: { live: 'https://assembly-game-tau.vercel.app/' }, group: 'learning', source: 'Scrimba React course' },
+        { id: 'meme-generator', name: 'Meme Generator', summary: 'Imgflip API with custom text overlay.', links: { live: 'https://memegenerator-tawny-psi.vercel.app/' }, group: 'learning', source: 'Scrimba React course' },
+        { id: 'tenzies', name: 'Tenzies', summary: 'Dice game with freeze-and-reroll state.', links: { live: 'https://tenzies-six-orcin.vercel.app/' }, group: 'learning', source: 'Scrimba React course' },
+
+        { id: 'fcc-rpg', name: 'Roleplaying Game', summary: 'Text-based RPG with stats and inventory.', links: { live: 'fcc-html-css/roleplaying-game/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-music', name: 'Music Player', summary: 'Play, pause, skip and shuffle controls.', links: { live: 'fcc-html-css/music-player/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-palindrome', name: 'Palindrome Checker', summary: 'String normalisation and comparison.', links: { live: 'fcc-html-css/palindrome-checker/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-roman', name: 'Roman Numeral Converter', summary: 'Integers up to 3999.', links: { live: 'fcc-html-css/roman-numeral-converter/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-phone', name: 'Telephone Number Validator', summary: 'Multi-format US numbers via regex.', links: { live: 'fcc-html-css/number-validator/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-cash', name: 'Cash Register', summary: 'Change calculation with edge cases.', links: { live: 'fcc-html-css/cash-register/' }, group: 'learning', source: 'freeCodeCamp' },
+        { id: 'fcc-creature', name: 'RPG Creature Search', summary: 'Fetch and render from a creature database.', links: { live: 'fcc-html-css/rpg-creature-search/index.html' }, group: 'learning', source: 'freeCodeCamp' },
+
+        { id: '50d50p', name: '50 Days · 50 Projects', summary: 'Fifty small builds over fifty consecutive days.', links: { live: 'https://mudassirudd.github.io/50d-50p/' }, group: 'learning', source: 'Challenge' },
+      ]
+
+      const GROUPS = [
+        { id: 'featured', label: 'Featured', layout: 'card' },
+        { id: 'client', label: 'Client delivery', layout: 'row' },
+        { id: 'product', label: 'Product & experiments', layout: 'row' },
+      ]
+
+      /* ======================================================================
+       * TESTIMONIALS
+       * ----------------------------------------------------------------------
+       * The testimonials section stays hidden while this array is empty.
+       *
+       * ONLY REAL, APPROVED QUOTES GO IN HERE. A fabricated testimonial costs
+       * you the deal and your reputation the moment someone checks it.
+       * See testimonial-outreach.md for messages that reliably produce one.
+       *
+       *   { text: 'What they actually said.',
+       *     author: 'Their Name',
+       *     role: 'Owner, Business Name',
+       *     url: 'https://theirbusiness.com' }   // url optional
+       * ==================================================================== */
+      const TESTIMONIALS = []
+
+      /* ======================================================================
+       * RENDERING — you shouldn't need to touch anything below here.
+       * ==================================================================== */
+
+      const $ = (sel, root = document) => root.querySelector(sel)
+      const esc = (s) =>
+        String(s ?? '').replace(
+          /[&<>"']/g,
+          (c) =>
+            ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]
+        )
+
+      const isExternal = (url) => /^https?:\/\//i.test(url)
+      const linkAttrs = (url) =>
+        isExternal(url) ? ' target="_blank" rel="noopener noreferrer"' : ''
+
+      const STATUS_LABEL = {
+        live: 'Live',
+        offline: 'Offline',
+        private: 'Private',
+        archived: 'Archived',
+      }
+
+      function statusPill(status) {
+        if (!status || !STATUS_LABEL[status]) return ''
+        return `<span class="status status--${status}">${STATUS_LABEL[status]}</span>`
+      }
+
+      function chips(list) {
+        if (!list || !list.length) return ''
+        return `<div class="chips">${list
+          .map((t) => `<span class="chip">${esc(t)}</span>`)
+          .join('')}</div>`
+      }
+
+      /* Builds the 1-3 action buttons for a project. The case study is always
+         the primary action when one exists — a live link you don't fully
+         control should never be the only way in. */
+      function actions(project, { compact = false } = {}) {
+        const { links = {}, status } = project
+        const size = compact ? ' btn--sm' : ''
+        const out = []
+
+        if (links.caseStudy) {
+          out.push(
+            `<a class="btn btn--primary${size}" href="${esc(links.caseStudy)}">Read the case study</a>`
+          )
+        }
+        if (links.demoVideo) {
+          out.push(
+            `<a class="btn btn--secondary${size}" href="${esc(links.demoVideo)}"${linkAttrs(links.demoVideo)}>Watch demo</a>`
+          )
+        }
+        // A live link is only offered when the project is actually live.
+        if (links.live && status !== 'offline' && status !== 'private') {
+          const label = links.caseStudy ? 'Live site ↗' : 'Open ↗'
+          const cls = out.length ? 'btn--secondary' : 'btn--primary'
+          out.push(
+            `<a class="btn ${cls}${size}" href="${esc(links.live)}"${linkAttrs(links.live)}>${label}</a>`
+          )
+        }
+        if (links.repo) {
+          out.push(
+            `<a class="btn btn--ghost${size}" href="${esc(links.repo)}"${linkAttrs(links.repo)}>Source ↗</a>`
+          )
+        }
+        if (status === 'offline' || status === 'private') {
+          out.push(
+            `<a class="btn btn--ghost${size}" href="#contact">Demo on request</a>`
+          )
+        }
+        return out.join('')
+      }
+
+      function card(p) {
+        const client = p.client
+          ? `<p class="pcard__client">${esc(p.client)} · ${esc(p.year)}</p>`
+          : `<p class="pcard__client">${esc(p.year)}</p>`
+
+        const contribution = p.contribution
+          ? `<p class="pcard__contribution"><strong>My role:</strong> ${esc(p.contribution)}</p>`
+          : ''
+
+        const caps =
+          p.capabilities && p.capabilities.length
+            ? `<ul class="pcard__capabilities">${p.capabilities
+                .map((c) => `<li>${esc(c)}</li>`)
+                .join('')}</ul>`
+            : ''
+
+        const note = p.linkNote
+          ? `<p class="pcard__client" style="margin-top:var(--sp-3)">${esc(p.linkNote)}</p>`
+          : ''
+
+        return `
+          <article class="pcard" id="${esc(p.id)}">
+            <div class="pcard__top">
+              <span class="pcard__type">${esc(p.type)}</span>
+              ${statusPill(p.status)}
+            </div>
+            <h4 class="pcard__name">${esc(p.name)}</h4>
+            ${client}
+            <p class="pcard__summary">${esc(p.summary)}</p>
+            ${contribution}
+            ${caps}
+            ${chips(p.stack)}
+            <div class="pcard__actions">${actions(p)}</div>
+            ${note}
+          </article>`
+      }
+
+      function row(p) {
+        const client = p.client ? ` · ${esc(p.client)}` : ''
+        return `
+          <article class="prow" id="${esc(p.id)}">
+            <div class="prow__main">
+              <div class="prow__head">
+                <h4 class="prow__name">${esc(p.name)}</h4>
+                <span class="prow__type">${esc(p.type)}${client}</span>
+                <span class="prow__year">${esc(p.year)}</span>
+              </div>
+              <p class="prow__summary">${esc(p.summary)}</p>
+              ${chips(p.stack)}
+            </div>
+            <div class="prow__actions">${actions(p, { compact: true })}</div>
+          </article>`
+      }
+
+      function renderWork() {
+        const mount = $('#work-groups')
+        if (!mount) return
+
+        mount.innerHTML = GROUPS.map(({ id, label, layout }) => {
+          const items = PROJECTS.filter((p) => p.group === id)
+          if (!items.length) return ''
+          const body = items.map(layout === 'card' ? card : row).join('')
+          const wrap =
+            layout === 'card'
+              ? `<div class="featured-grid">${body}</div>`
+              : `<div>${body}</div>`
+          return `
+            <div class="work__group">
+              <h3 class="work__group-title">${esc(label)}</h3>
+              ${wrap}
+            </div>`
+        }).join('')
+      }
+
+      function renderArchive() {
+        const mount = $('#archive-groups')
+        const label = $('#archive-label')
+        const items = PROJECTS.filter((p) => p.group === 'learning')
+
+        if (!items.length) {
+          const details = $('.archive')
+          if (details) details.hidden = true
+          return
+        }
+
+        if (label) label.textContent = `Learning archive (${items.length})`
+
+        // Group by source, preserving the order sources first appear
+        const bySource = new Map()
+        items.forEach((p) => {
+          const key = p.source || 'Other'
+          if (!bySource.has(key)) bySource.set(key, [])
+          bySource.get(key).push(p)
+        })
+
+        mount.innerHTML = [...bySource.entries()]
+          .map(
+            ([source, list]) => `
+              <h3 class="work__group-title" style="margin-top:var(--sp-4)">${esc(source)} (${list.length})</h3>
+              <ul class="archive__list">
+                ${list
+                  .map((p) => {
+                    const url = (p.links && p.links.live) || ''
+                    const title = url
+                      ? `<a class="archive__title" href="${esc(url)}"${linkAttrs(url)}>${esc(p.name)} ↗</a>`
+                      : `<span class="archive__title">${esc(p.name)}</span>`
+                    return `<li>${title}<br />${esc(p.summary || '')}</li>`
+                  })
+                  .join('')}
+              </ul>`
+          )
+          .join('')
+      }
+
+      function renderTestimonials() {
+        const section = $('#testimonials')
+        const mount = $('#quotes')
+        if (!section || !mount) return
+
+        if (!TESTIMONIALS.length) {
+          section.hidden = true
+          return
+        }
+
+        section.hidden = false
+        mount.innerHTML = TESTIMONIALS.map((t) => {
+          const business = t.url
+            ? `<a href="${esc(t.url)}" target="_blank" rel="noopener noreferrer">${esc(t.role)}</a>`
+            : esc(t.role)
+          return `
+            <figure class="quote">
+              <div class="quote__mark" aria-hidden="true">&ldquo;</div>
+              <blockquote class="quote__text">${esc(t.text)}</blockquote>
+              <figcaption class="quote__cite">
+                <span class="quote__author">${esc(t.author)}</span>
+                <span class="quote__role">${business}</span>
+              </figcaption>
+            </figure>`
+        }).join('')
+      }
+
+      /* --- Optional config-driven bits --------------------------------- */
+      function renderOptionalLinks() {
+        if (CONFIG.resumeUrl) {
+          const nav = $('#nav-links')
+          if (nav) {
+            const a = document.createElement('a')
+            a.href = CONFIG.resumeUrl
+            a.textContent = 'Résumé'
+            a.target = '_blank'
+            a.rel = 'noopener noreferrer'
+            nav.appendChild(a)
+          }
+          const about = $('#about-links')
+          if (about) {
+            about.insertAdjacentHTML(
+              'afterbegin',
+              `<a class="btn btn--secondary btn--sm" href="${esc(CONFIG.resumeUrl)}" target="_blank" rel="noopener noreferrer">Download résumé</a>`
+            )
+          }
+          const footer = $('#footer-elsewhere')
+          if (footer) {
+            footer.insertAdjacentHTML(
+              'beforeend',
+              `<li><a href="${esc(CONFIG.resumeUrl)}" target="_blank" rel="noopener noreferrer">Résumé ↗</a></li>`
+            )
+          }
+        }
+
+        if (!CONFIG.whatsappNumber) return
+
+        // Primary CTA panel in the contact section
+        const waPrimary = $('#wa-primary')
+        if (waPrimary) waPrimary.href = WHATSAPP_URL
+
+        // Secondary button inside "Working together"
+        const engage = $('#engage-actions')
+        if (engage) {
+          engage.insertAdjacentHTML(
+            'beforeend',
+            `<a class="btn btn--secondary" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>`
+          )
+        }
+
+        // First entry in the channel list
+        const channels = $('#channels')
+        if (channels) {
+          channels.insertAdjacentHTML(
+            'afterbegin',
+            `<a class="channel" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">
+               <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
+               <span>
+                 <span class="channel__label">WhatsApp</span>
+                 <span class="channel__value">+91 83748 23091</span>
+               </span>
+             </a>`
+          )
+        }
+      }
+
+      /* --- Mobile nav ---------------------------------------------------- */
+      function initNav() {
+        const toggle = $('.nav__toggle')
+        const links = $('#nav-links')
+        if (!toggle || !links) return
+
+        const setOpen = (open) => {
+          toggle.setAttribute('aria-expanded', String(open))
+          links.setAttribute('data-open', String(open))
+        }
+
+        toggle.addEventListener('click', () => {
+          setOpen(toggle.getAttribute('aria-expanded') !== 'true')
+        })
+
+        links.addEventListener('click', (e) => {
+          if (e.target.closest('a')) setOpen(false)
+        })
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') setOpen(false)
+        })
+
+        // The menu is only a menu on small screens; reset when it's not.
+        const mq = window.matchMedia('(min-width: 721px)')
+        const sync = () => {
+          if (mq.matches) setOpen(false)
+        }
+        mq.addEventListener('change', sync)
+      }
+
+      /* --- Scroll spy ---------------------------------------------------- */
+      function initScrollSpy() {
+        const links = [...document.querySelectorAll('#nav-links a[href^="#"]')]
+        const sections = links
+          .map((a) => document.querySelector(a.getAttribute('href')))
+          .filter(Boolean)
+        if (!sections.length || !('IntersectionObserver' in window)) return
+
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (!entry.isIntersecting) return
+              links.forEach((a) =>
+                a.classList.toggle(
+                  'is-active',
+                  a.getAttribute('href') === `#${entry.target.id}`
+                )
+              )
+            })
+          },
+          { rootMargin: '-45% 0px -50% 0px' }
+        )
+        sections.forEach((s) => observer.observe(s))
+      }
+
+      /* --- Go ------------------------------------------------------------ */
+      renderWork()
+      renderArchive()
+      renderTestimonials()
+      renderOptionalLinks()
+      initNav()
+      initScrollSpy()
+      $('#year').textContent = new Date().getFullYear()
     </script>
   </body>
 </html>

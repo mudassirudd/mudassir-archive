@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Kirana — inventory and ordering system | Mudassir Uddin Ahmed</title>
+    <meta
+      name="description"
+      content="Case study: a full-stack grocery inventory and ordering system built with React, Node and MongoDB, deployed on AWS EC2 behind nginx and supervised by PM2."
+    />
+    <link rel="canonical" href="https://mudassirudd.github.io/mudassir-archive/work/kirana/" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Kirana — inventory and ordering system" />
+    <meta
+      property="og:description"
+      content="Replacing a paper stock book and WhatsApp orders with a system where every order is a record. React, Node, MongoDB, AWS EC2, nginx, PM2."
+    />
+    <meta property="og:url" content="https://mudassirudd.github.io/mudassir-archive/work/kirana/" />
+    <meta property="og:image" content="https://mudassirudd.github.io/mudassir-archive/og-image.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="../../favicon.svg" type="image/svg+xml" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="nav">
+      <div class="container nav__inner">
+        <a class="nav__brand" href="../../index.html">
+          <span class="nav__brand-mark" aria-hidden="true">M</span>
+          <span>Mudassir Uddin Ahmed</span>
+        </a>
+        <nav class="nav__links" data-open="false" aria-label="Main">
+          <a href="../../index.html#work">Work</a>
+          <a href="../../index.html#about">About</a>
+          <a href="../../index.html#contact">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+    ==========================================================================
+    ⚠  BEFORE YOU PUBLISH THIS PAGE
+    ==========================================================================
+    The architecture sections below are written from your stated stack (MERN,
+    EC2, nginx, PM2) and are accurate as far as that goes. Everything marked
+    with a visible "TODO" block is a gap only you can fill.
+
+    Rules for filling them in:
+      • No numbers you can't produce evidence for. "How did you measure that"
+        is the follow-up question in every technical interview, and one
+        fabricated metric fails it in a single exchange.
+      • Countable facts are fine and are not metrics: how many user roles,
+        how many collections, how long it's been running, what it replaced.
+      • If you don't have a result, say so plainly. "Nobody instrumented it
+        at launch, that's the first thing I'd add" reads better to a senior
+        engineer than an invented percentage.
+
+    Delete each TODO block once you've replaced it.
+    ==========================================================================
+    -->
+
+    <main id="main" class="cs">
+      <div class="container container--narrow">
+        <a class="cs__back" href="../../index.html#work">All work</a>
+
+        <h1 class="cs__title">Kirana — inventory and ordering system</h1>
+        <p class="cs__standfirst">
+          A grocery business was tracking stock in a paper book and taking
+          orders over WhatsApp. I built them a system where every order is a
+          record with a status, a timestamp and a customer attached to it — and
+          I've kept it running on their server ever since.
+        </p>
+
+        <dl class="cs__facts">
+          <div class="cs__fact">
+            <dt>Client</dt>
+            <dd>Grocery retail</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Year</dt>
+            <dd>2025</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Role</dt>
+            <dd>Sole engineer</dd>
+          </div>
+          <div class="cs__fact">
+            <dt>Type</dt>
+            <dd>Full-stack web app</dd>
+          </div>
+        </dl>
+
+        <div class="chips" style="margin-top: var(--sp-5)">
+          <span class="chip">React</span>
+          <span class="chip">Node.js</span>
+          <span class="chip">Express</span>
+          <span class="chip">MongoDB</span>
+          <span class="chip">AWS EC2</span>
+          <span class="chip">nginx</span>
+          <span class="chip">PM2</span>
+        </div>
+
+        <div class="cs__actions">
+          <a
+            class="btn btn--secondary"
+            href="http://35.169.120.101/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Live instance ↗</a
+          >
+          <a class="btn btn--ghost" href="../../index.html#contact">Request a walkthrough</a>
+        </div>
+        <p class="cs__standfirst" style="font-size: var(--fs-sm); margin-top: var(--sp-3)">
+          The live instance is self-hosted over plain HTTP, so your browser will
+          warn you before it loads.
+        </p>
+
+        <div class="cs__body">
+          <h2>The situation</h2>
+          <p>
+            The business ran on two systems that didn't talk to each other: a
+            paper book for what was in stock, and WhatsApp for what customers
+            wanted. Both worked, in the sense that the shop stayed open. Neither
+            produced a record you could look anything up in.
+          </p>
+          <p>
+            The practical consequence was that nobody could answer questions
+            that should be easy. What did this customer order last month. How
+            much of this item did we actually move. Was that order fulfilled or
+            is it still sitting in a chat thread above forty newer messages.
+          </p>
+
+          <div class="todo">
+            <strong>TODO — replace with the real story.</strong> How did they
+            describe the problem to you when you first spoke? Use their words,
+            not technical ones. What specifically went wrong often enough that
+            they were willing to pay to fix it?
+          </div>
+
+          <h2>What I built</h2>
+          <p>
+            A web application the owner and staff use from a browser, replacing
+            both the book and the order thread.
+          </p>
+          <ul>
+            <li>
+              <strong>Stock records with adjustment history</strong> — quantities
+              change through recorded adjustments rather than being overwritten,
+              so there's a trail of what changed and when.
+            </li>
+            <li>
+              <strong>Order lifecycle</strong> — an order moves through explicit
+              states rather than existing as a message someone has to remember
+              to act on.
+            </li>
+            <li>
+              <strong>Customer records tied to orders</strong> — order history is
+              attached to a customer instead of scattered across chat threads.
+            </li>
+            <li>
+              <strong>Role separation</strong> — the owner and counter staff see
+              different things and can do different things.
+            </li>
+          </ul>
+
+          <div class="todo">
+            <strong>TODO — correct this list.</strong> These are the capabilities
+            a system like this usually has; make them the ones yours actually
+            has. Add anything distinctive you built. Delete anything you didn't.
+            Describe each in plain language a shop owner would recognise, not in
+            framework terms.
+          </div>
+
+          <h2>How it's put together</h2>
+          <p>
+            A React single-page application talks to an Express API over REST.
+            The API owns all access to MongoDB — the browser never touches the
+            database directly. The whole thing runs on one AWS EC2 instance.
+          </p>
+          <p>
+            nginx sits in front as a reverse proxy: it serves the built React
+            bundle as static files and forwards API requests to the Node process
+            on its internal port, so only one port is exposed to the world.
+            <strong>PM2 supervises the Node process</strong> — it restarts it if
+            it crashes and brings it back up when the instance reboots, which is
+            the difference between a demo and something a business can open on a
+            Monday morning.
+          </p>
+
+          <div class="diagram">
+            <pre>
+  Browser
+     │  HTTPS / HTTP
+     ▼
+  ┌──────────────────────────────────────────┐
+  │  AWS EC2 instance                        │
+  │                                          │
+  │   nginx  ──────────┬── static bundle     │
+  │   (reverse proxy)  │   (React build)     │
+  │                    │                     │
+  │                    └── /api/* ──┐        │
+  │                                 ▼        │
+  │                      PM2 ── Node/Express │
+  │                                 │        │
+  │                                 ▼        │
+  │                            MongoDB       │
+  └──────────────────────────────────────────┘</pre
+            >
+          </div>
+
+          <div class="todo">
+            <strong>TODO — confirm the details.</strong> Is MongoDB on the same
+            instance or on Atlas? How does authentication work — sessions or
+            JWT? Which collections exist? Name them: a reader who knows what
+            they're looking at will judge the whole page on this paragraph, and
+            it's the one section a recruiter reads closely.
+          </div>
+
+          <h2>Decisions and trade-offs</h2>
+
+          <div class="decision">
+            <p class="decision__title">
+              A single EC2 instance rather than a managed platform
+            </p>
+            <p>
+              Render or Railway would have deployed this in an afternoon with
+              TLS handled for me. I chose a plain Linux box because the client
+              needed to own the thing outright, and because I wanted to be the
+              person who understands the whole path from a browser request to a
+              database read.
+            </p>
+            <p class="decision__cost">
+              <strong>The cost:</strong> I own the boring parts too — certificate
+              renewal, process supervision, and being the one who notices when
+              it goes down. There's no platform dashboard to tell me.
+            </p>
+          </div>
+
+          <div class="decision">
+            <p class="decision__title">
+              Stock adjustments as records rather than editable quantities
+            </p>
+            <p>
+              The simpler design is a number on the product you increment and
+              decrement. I made each change its own record instead, so the
+              quantity is derived from history rather than stored as a fact
+              someone can quietly overwrite.
+            </p>
+            <p class="decision__cost">
+              <strong>The cost:</strong> more writes, and reads need more care.
+              For a business that had just lost visibility into where stock went,
+              the trail was worth more than the simplicity.
+            </p>
+          </div>
+
+          <div class="todo">
+            <strong>TODO — make these yours.</strong> The first decision is real
+            (you chose EC2 over a PaaS). The second is a plausible design I've
+            written to show the shape — replace it with a decision you actually
+            made and remember arguing with yourself about. Format:
+            <em>chose X over Y because Z; the cost was W.</em> This is the
+            highest-signal section on the page for senior readers and the one
+            almost nobody writes.
+          </div>
+
+          <h2>What I'd change</h2>
+          <ul>
+            <li>
+              <strong>TLS and a real hostname.</strong> It's served over plain
+              HTTP on a bare IP, which means a browser warning before anyone
+              sees anything. A subdomain with a Let's Encrypt certificate on the
+              nginx already in front of it is an afternoon's work and I should
+              have done it at launch.
+            </li>
+            <li>
+              <strong>Instrument it.</strong> There's no logging of what actually
+              gets used. I can describe what the system does but not what it
+              does most, which is the question I'd want answered before building
+              the next feature.
+            </li>
+            <li>
+              <strong>Automated backups.</strong> A single instance with a single
+              database is a single point of failure.
+            </li>
+          </ul>
+
+          <h2>Outcome</h2>
+          <p>
+            It's been running on the same instance since launch, and the paper
+            stock book is no longer in use.
+          </p>
+          <p>
+            I don't have usage numbers for this one. It's an internal tool and
+            nobody instrumented it at launch, so I can tell you what it replaced
+            and that it's still up, but I can't show you a chart. That's the
+            first thing I'd add now — order volume and stock-adjustment counts —
+            so there's something to point at beyond "it works."
+          </p>
+
+          <div class="todo">
+            <strong>TODO — one line from the owner would do more than this whole
+            page.</strong> See <code>testimonial-outreach.md</code> in the repo
+            root for a message that reliably produces a usable quote. Kirana's
+            owner is the only client who can speak to software
+            <em>reliability</em> rather than a site looking nice.
+          </div>
+        </div>
+
+        <div class="cs__cta">
+          <h2>Need something like this built?</h2>
+          <p>
+            If you're running a business on spreadsheets, paper and chat
+            messages, tell me what the workflow actually looks like and I'll
+            tell you what it'd take to replace it.
+          </p>
+          <div class="cs__cta-actions">
+            <a class="btn btn--primary" href="../../index.html#contact">Start a project →</a>
+            <a class="btn btn--secondary" href="../../index.html#work">See other work</a>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bottom">
+          <span>© <span id="year">2026</span> Mudassir Uddin Ahmed</span>
+          <a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear()
+    </script>
+  </body>
+</html>
