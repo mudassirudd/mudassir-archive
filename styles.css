@@ -580,9 +580,42 @@ h4 {
   background-color: var(--surface);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
-  padding: var(--sp-5);
+  overflow: hidden;
   transition: border-color 0.25s var(--ease), transform 0.25s var(--ease),
     box-shadow 0.25s var(--ease);
+}
+
+.pcard__shot {
+  display: block;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  background-color: var(--surface-2);
+  border-bottom: 1px solid var(--border);
+}
+
+.pcard__shot img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.4s var(--ease);
+}
+
+.pcard:hover .pcard__shot img {
+  transform: scale(1.03);
+}
+
+.pcard__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: var(--sp-5);
+}
+
+.pcard__note {
+  margin-top: var(--sp-3);
+  font-size: var(--fs-xs);
+  color: var(--text-mute);
 }
 
 .pcard:hover {
@@ -625,43 +658,11 @@ h4 {
 }
 
 .pcard__contribution {
-  margin-top: var(--sp-4);
-  padding-left: var(--sp-4);
-  border-left: 2px solid var(--accent-line);
+  margin-top: var(--sp-3);
   font-size: var(--fs-sm);
-  color: var(--text-dim);
+  color: var(--text-mute);
 }
 
-.pcard__contribution strong {
-  color: var(--text);
-  font-weight: 600;
-}
-
-/* Capabilities — the plain-English read, for the business audience */
-.pcard__capabilities {
-  margin-top: var(--sp-4);
-  display: flex;
-  flex-direction: column;
-  gap: var(--sp-2);
-}
-
-.pcard__capabilities li {
-  position: relative;
-  padding-left: var(--sp-5);
-  font-size: var(--fs-sm);
-  color: var(--text-dim);
-}
-
-.pcard__capabilities li::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.55em;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background-color: var(--accent-line);
-}
 
 /* Stack chips — the technical read, for the recruiter audience */
 .chips {
@@ -731,11 +732,34 @@ h4 {
 /* --- Client delivery rows ------------------------------------------------ */
 .prow {
   display: grid;
-  grid-template-columns: 1fr auto;
-  gap: var(--sp-3) var(--sp-5);
+  grid-template-columns: 200px 1fr;
+  gap: var(--sp-5);
   align-items: start;
   padding: var(--sp-5) 0;
   border-bottom: 1px solid var(--border);
+}
+
+.prow__thumb {
+  aspect-ratio: 16 / 10;
+  border: 1px solid var(--border);
+  border-radius: var(--r-md);
+  overflow: hidden;
+  background-color: var(--surface-2);
+}
+
+.prow__thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+.prow__thumb--none {
+  border-style: dashed;
+}
+
+.prow__actions {
+  margin-top: var(--sp-4);
 }
 
 .prow:first-child {
@@ -1335,6 +1359,87 @@ a.channel .channel__value {
 }
 
 /* --------------------------------------------------------------------------
+   13b. STICKY CONVERSION BAR
+   Mobile: Call + WhatsApp pinned to the bottom, always reachable.
+   Desktop: a single floating WhatsApp button.
+   -------------------------------------------------------------------------- */
+.sticky-cta {
+  position: fixed;
+  z-index: 900;
+  display: flex;
+  gap: 1px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--border);
+  border-top: 1px solid var(--border);
+  padding-bottom: env(safe-area-inset-bottom);
+  transform: translateY(110%);
+  transition: transform 0.25s var(--ease);
+}
+
+.sticky-cta.is-visible {
+  transform: translateY(0);
+}
+
+.sticky-cta__btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-2);
+  padding: 0.95rem 1rem;
+  font-size: var(--fs-md);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.sticky-cta__btn svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.sticky-cta__btn--call {
+  background-color: var(--surface);
+  color: var(--text);
+}
+
+.sticky-cta__btn--wa {
+  background-color: #25d366;
+  color: #04231a;
+}
+
+/* Desktop: collapse to one floating WhatsApp button, bottom right */
+@media (min-width: 721px) {
+  .sticky-cta {
+    left: auto;
+    right: var(--sp-6);
+    bottom: var(--sp-6);
+    gap: 0;
+    background: none;
+    border: none;
+    border-radius: var(--r-full);
+    box-shadow: var(--shadow-lg);
+    transform: translateY(0) scale(0);
+    transition: transform 0.25s var(--ease);
+  }
+
+  .sticky-cta.is-visible {
+    transform: translateY(0) scale(1);
+  }
+
+  .sticky-cta__btn--call {
+    display: none;
+  }
+
+  .sticky-cta__btn--wa {
+    border-radius: var(--r-full);
+    padding: 0.9rem 1.4rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
    14. FOOTER
    -------------------------------------------------------------------------- */
 .footer {
@@ -1701,6 +1806,14 @@ a.channel .channel__value {
 
   .prow {
     grid-template-columns: 1fr;
+  }
+
+  .prow__thumb {
+    max-width: 260px;
+  }
+
+  .prow__thumb--none {
+    display: none;
   }
 
   .prow__year {
