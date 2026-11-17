@@ -2,27 +2,25 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <title>Mudassir Uddin Ahmed — Software Engineer</title>
+    <title>Mudassir Uddin Ahmed | Software Engineer</title>
     <meta
       name="description"
-      content="Software engineer building full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running. Selected client work and case studies."
+      content="Software engineer building full-stack web applications with React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running. Selected client work and case studies."
     />
     <meta name="author" content="Mudassir Uddin Ahmed" />
 
-    <!-- TODO: if you buy mudassirudd.dev, change SITE_URL below and every
-         absolute URL in this head block to the new domain. -->
     <link rel="canonical" href="https://mudassirudd.github.io/mudassir-archive/" />
 
     <!-- Open Graph / Twitter — without these, every link you paste into
          WhatsApp or a LinkedIn DM previews as a blank grey box. -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mudassir Uddin Ahmed" />
-    <meta property="og:title" content="Mudassir Uddin Ahmed — Software Engineer" />
+    <meta property="og:title" content="Mudassir Uddin Ahmed | Software Engineer" />
     <meta
       property="og:description"
-      content="Full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
+      content="Full-stack web applications built with React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
     />
     <meta property="og:url" content="https://mudassirudd.github.io/mudassir-archive/" />
     <meta
@@ -32,10 +30,10 @@
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Mudassir Uddin Ahmed — Software Engineer" />
+    <meta name="twitter:title" content="Mudassir Uddin Ahmed | Software Engineer" />
     <meta
       name="twitter:description"
-      content="Full-stack web applications — React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
+      content="Full-stack web applications built with React, Node, MongoDB and PostgreSQL, deployed on AWS and kept running."
     />
     <meta
       name="twitter:image"
@@ -48,7 +46,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -97,10 +95,7 @@
     <!-- ===================== NAV ===================== -->
     <header class="nav">
       <div class="container nav__inner">
-        <a class="nav__brand" href="#top">
-          <span class="nav__brand-mark" aria-hidden="true">M</span>
-          <span>Mudassir Uddin Ahmed</span>
-        </a>
+        <a class="nav__brand" href="#top">Mudassir Uddin Ahmed</a>
 
         <button
           class="nav__toggle"
@@ -109,12 +104,8 @@
           aria-controls="nav-links"
           aria-label="Toggle navigation menu"
         >
-          <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <line x1="3" y1="7" x2="21" y2="7" /><line x1="3" y1="12" x2="21" y2="12" /><line x1="3" y1="17" x2="21" y2="17" />
-          </svg>
-          <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-            <line x1="5" y1="5" x2="19" y2="19" /><line x1="19" y1="5" x2="5" y2="19" />
-          </svg>
+          <svg class="icon icon-open" viewBox="0 0 20 20" aria-hidden="true"><path d="M3 6h14M3 10h14M3 14h14" /></svg>
+          <svg class="icon icon-close" viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5l10 10M15 5 5 15" /></svg>
         </button>
 
         <nav id="nav-links" class="nav__links" data-open="false" aria-label="Main">
@@ -124,6 +115,7 @@
           <a href="#working-together">Working together</a>
           <a href="#contact">Contact</a>
           <!-- Résumé link is injected here by JS when RESUME_URL is set -->
+          <a class="btn btn--wa nav__cta" href="#contact" data-wa target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>WhatsApp me</a>
         </nav>
       </div>
     </header>
@@ -131,70 +123,96 @@
     <main id="main">
       <!-- ===================== HERO ===================== -->
       <section id="top" class="hero">
-        <div class="container">
-          <h1 class="hero__title">
-            Mudassir Uddin Ahmed —
-            <span class="accent">Software Engineer</span>
-          </h1>
+        <div class="container hero__grid">
+          <div class="hero__main">
+            <!-- Each phrase gets a hand-drawn strike that draws in once on
+                 load (styles.css, "16. MOTION"). -->
+            <h1 class="hero__title">
+              I build web applications for businesses that have outgrown
+              <span class="strike">spreadsheets<svg class="strike__line" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 6 C 25 3, 50 8, 99 4" /></svg></span>,
+              <span class="strike">phone calls<svg class="strike__line" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 5 C 30 7, 60 3, 99 6" /></svg></span>
+              and
+              <span class="strike">WhatsApp<svg class="strike__line" viewBox="0 0 100 10" preserveAspectRatio="none" aria-hidden="true"><path pathLength="1" d="M1 6 C 20 4, 70 7, 99 4" /></svg></span>.
+            </h1>
 
-          <p class="hero__lede">
-            I build web applications for businesses that have outgrown
-            spreadsheets, phone calls and WhatsApp — ordering systems,
-            storefronts, internal tools.
-            <strong>Designed, built, deployed and kept running.</strong>
-          </p>
+            <p class="hero__lede">
+              Ordering systems, storefronts and internal tools. I design them,
+              build them, put them online and keep them running.
+            </p>
 
-          <div class="hero__actions">
-            <a class="btn btn--primary" href="#contact">Start a project →</a>
-            <a class="btn btn--secondary" href="#work">See the work</a>
+            <div class="hero__actions">
+              <a class="btn btn--wa" href="#contact" data-wa target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>Message me on WhatsApp</a>
+              <a class="tlink" href="#work">
+                See the work
+                <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
+              </a>
+            </div>
+            <p class="hero__micro">I reply within 24 hours, usually sooner.</p>
           </div>
 
-          <p class="hero__meta">
-            <span>Hyderabad, India · IST (UTC+5:30)</span>
-            <a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a>
-            <a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-            <a href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-          </p>
+          <dl class="hero__facts">
+            <div>
+              <dt>Based in</dt>
+              <dd>Hyderabad, India<br />IST (UTC+5:30)</dd>
+            </div>
+            <div>
+              <dt>Email</dt>
+              <dd><a href="mailto:mudassirudd@gmail.com">mudassirudd@gmail.com</a></dd>
+            </div>
+            <div>
+              <dt>Elsewhere</dt>
+              <dd>
+                <a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub</a>,
+                <a href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+              </dd>
+            </div>
+          </dl>
         </div>
       </section>
 
-      <!-- ===================== TRUST STRIP ===================== -->
-      <div class="trust">
-        <div class="container trust__inner">
-          <span class="trust__label">Built for</span>
-          <ul class="trust__items">
-            <li><a href="https://xpressprinting247.com/" target="_blank" rel="noopener noreferrer">Xpress Printing 24/7</a></li>
-            <li><a href="https://shamsconventionhyd.in/" target="_blank" rel="noopener noreferrer">Shams Convention</a></li>
-            <li><a href="https://madinahotel.in/" target="_blank" rel="noopener noreferrer">Madina Hotel</a></li>
-            <li><a href="https://vapesoz.com/" target="_blank" rel="noopener noreferrer">VapesOz</a></li>
-            <li><a href="https://www.mehvishguesthouse.in/" target="_blank" rel="noopener noreferrer">Mehvish Guest House</a></li>
-            <li><a href="https://www.teatimesanytime.com/" target="_blank" rel="noopener noreferrer">TeaTimesAnytime</a></li>
+      <!-- ===================== CLIENT INDEX ===================== -->
+      <section class="clients" aria-labelledby="clients-label">
+        <div class="container clients__inner">
+          <h2 class="clients__label" id="clients-label">Built for</h2>
+          <ul class="clients__list">
+            <li><a href="https://xpressprinting247.com/" target="_blank" rel="noopener noreferrer">Xpress Printing 24/7<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
+            <li><a href="https://shamsconventionhyd.in/" target="_blank" rel="noopener noreferrer">Shams Convention<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
+            <li><a href="https://madinahotel.in/" target="_blank" rel="noopener noreferrer">Madina Hotel<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
+            <li><a href="https://vapesoz.com/" target="_blank" rel="noopener noreferrer">VapesOz<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
+            <li><a href="https://www.mehvishguesthouse.in/" target="_blank" rel="noopener noreferrer">Mehvish Guest House<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
+            <li><a href="https://www.teatimesanytime.com/" target="_blank" rel="noopener noreferrer">TeaTimesAnytime<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a></li>
           </ul>
         </div>
-      </div>
+      </section>
 
       <!-- ===================== WORK ===================== -->
       <section id="work" class="section">
         <div class="container">
           <div class="section__head">
-            <span class="section__eyebrow">Selected work</span>
-            <h2 class="section__title">Systems I designed, built and deployed</h2>
+            <div>
+              <h2 class="section__title">Systems I designed, built and deployed</h2>
+            </div>
             <p class="section__lede">
-              Every project below shipped to real users. Where I was the only
-              engineer, I say so — schema, API, interface and deployment.
+              Everything here is live with real users. Where I was the only
+              engineer on it, I say so.
             </p>
           </div>
 
           <div id="work-groups"></div>
 
-          <!-- Inline CTA — one line, deliberately not a full-width band -->
+          <!-- CTA band: the natural decision point right after the work -->
           <div class="work__cta">
-            <p>
-              <strong>Building something similar?</strong>
-              Tell me what you're trying to do and I'll tell you honestly
-              whether I'm the right person for it.
-            </p>
-            <a class="btn btn--primary" href="#contact">Start a project →</a>
+            <div>
+              <h3 class="work__cta-title">Building something like this?</h3>
+              <p>
+                Tell me what you're trying to do and I'll tell you honestly if
+                I'm the right person for it.
+              </p>
+            </div>
+            <div class="cta-pair">
+              <a class="btn btn--wa" href="#contact" data-wa target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>Talk it through on WhatsApp</a>
+              <a class="btn btn--secondary" href="mailto:mudassirudd@gmail.com">Email me</a>
+            </div>
           </div>
 
           <!-- Learning archive: collapsed by default, zero cards.
@@ -203,15 +221,17 @@
           <details class="archive">
             <summary class="archive__summary">
               <span id="archive-label">Learning archive</span>
+              <svg class="icon icon-plus" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 4v12M4 10h12" /></svg>
+              <svg class="icon icon-minus" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12" /></svg>
             </summary>
             <div class="archive__body">
               <div id="archive-groups"></div>
               <p class="archive__note">
                 Course and certification work, kept here for completeness. The
                 freeCodeCamp set is the JavaScript Algorithms &amp; Data
-                Structures certification; the React set is from Scrimba's
-                React course. All still run — they're just not what I'd point
-                a client at.
+                Structures certification, and the React set comes from Scrimba's
+                React course. They all still run. They're just not what I'd
+                point a client at.
               </p>
             </div>
           </details>
@@ -220,39 +240,40 @@
 
       <!-- ===================== ABOUT ===================== -->
       <section id="about" class="section section--alt">
-        <div class="container">
-          <div class="section__head">
-            <span class="section__eyebrow">About</span>
+        <div class="container split">
+          <div class="split__aside">
             <h2 class="section__title">How I work</h2>
           </div>
 
-          <div class="about__body">
+          <div class="split__main about__body">
             <p>
-              I start with how the business actually works — who touches an
-              order, where it gets written down, what goes wrong most often —
-              and then build the least complicated thing that fixes it.
+              I start with how the business actually works: who touches an
+              order, where it gets written down, what goes wrong most often.
+              Then I build the simplest thing that fixes it.
             </p>
+            <p class="pull">I deploy and maintain what I build.</p>
             <p>
-              <strong>I deploy and maintain what I build.</strong> Kirana has
-              been running on an AWS EC2 instance behind nginx, supervised by
-              PM2, since I shipped it. I'm the one who gets the call when it
-              misbehaves. That's the part most people skip, and it's the part
-              that decides whether software is an asset or a liability.
+              Kirana has been running on an AWS EC2 instance behind nginx,
+              supervised by PM2, since the day I shipped it. When it
+              misbehaves, I'm the one who gets the call. Most people skip that
+              part, and it's the part that decides whether software is an
+              asset or a liability.
             </p>
             <p>
               Sometimes the right answer isn't custom software at all. Some of
-              my work is WordPress, because an owner who needs to change prices
-              on a Sunday night is better served by a tool they can operate than
-              a bespoke one they can't. And on the print platform I deliberately
-              left out online payments, because the shop invoices — that feature
-              would have been for my portfolio, not for them.
+              my work is WordPress, because an owner who wants to change prices
+              on a Sunday night needs a tool they can run themselves. On the
+              print platform I left out online payments on purpose. The shop
+              invoices its customers, so that feature would have been for my
+              portfolio, not for them.
             </p>
             <p>
-              You own everything I build: domain, source code, database,
-              records. No retainer, no licence, no dependency on me.
+              You own everything I build: the domain, the source code, the
+              database and the records. No retainer, no licence, no dependency
+              on me.
             </p>
 
-            <!-- NOTE: naming ZeezTech here is a judgement call — see
+            <!-- NOTE: naming ZeezTech here is a judgement call; see
                  linkedin-copy.md. Swap for "a product engineering studio in
                  Hyderabad" if you'd rather this page weren't findable by your
                  employer next to a hire-me CTA. -->
@@ -260,14 +281,18 @@
               <span class="about__now-label">Currently</span>
               DevOps Lead at
               <a href="https://zeeztech.com/" target="_blank" rel="noopener noreferrer">ZeezTech</a>,
-              a product engineering studio in Hyderabad — working day to day in
+              a product engineering studio in Hyderabad. Day to day I work in
               TypeScript, Next.js, PostgreSQL and Docker.
             </div>
 
             <div class="about__links" id="about-links">
-              <a class="btn btn--secondary btn--sm" href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-              <a class="btn btn--secondary btn--sm" href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
+              <a class="tlink" href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a>
+              <a class="tlink" href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">LinkedIn<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg></a>
             </div>
+
+            <p class="about__cta">
+              <a class="tlink" href="#contact" data-wa="Hi Mudassir, I have a system that needs looking after. Can we talk?" target="_blank" rel="noopener noreferrer">Got a system that needs looking after? Message me<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+            </p>
           </div>
         </div>
       </section>
@@ -276,68 +301,77 @@
       <section id="stack" class="section">
         <div class="container">
           <div class="section__head">
-            <span class="section__eyebrow">Stack</span>
-            <h2 class="section__title">What I build with</h2>
+            <div>
+              <h2 class="section__title">What I build with</h2>
+            </div>
             <p class="section__lede">
-              Things I've shipped production code in — not everything I've ever
-              opened a tutorial for.
+              Tools I've shipped real production code with. Not everything I've
+              watched a tutorial on.
             </p>
           </div>
 
-          <!-- TODO: remove anything here you couldn't defend for ten minutes
-               in an interview. A short honest list beats a long one. -->
-          <div class="stack-grid">
-            <div class="stack-group">
-              <h3 class="stack-group__title">Frontend</h3>
-              <ul>
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>Next.js</li>
-                <li>JavaScript (ES2022)</li>
-                <li>HTML &amp; CSS</li>
-                <li>Vite</li>
-              </ul>
+          <dl class="spec">
+            <div class="spec__row">
+              <dt>Frontend</dt>
+              <dd>
+                <ul class="inline-list">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Next.js</li>
+                  <li>JavaScript (ES2022)</li>
+                  <li>HTML &amp; CSS</li>
+                  <li>Vite</li>
+                </ul>
+              </dd>
             </div>
-            <div class="stack-group">
-              <h3 class="stack-group__title">Backend</h3>
-              <ul>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>REST APIs</li>
-                <li>Authentication &amp; sessions</li>
-              </ul>
+            <div class="spec__row">
+              <dt>Backend</dt>
+              <dd>
+                <ul class="inline-list">
+                  <li>Node.js</li>
+                  <li>Express</li>
+                  <li>REST APIs</li>
+                  <li>Authentication &amp; sessions</li>
+                </ul>
+              </dd>
             </div>
-            <div class="stack-group">
-              <h3 class="stack-group__title">Data</h3>
-              <ul>
-                <li>PostgreSQL</li>
-                <li>MongoDB</li>
-                <li>Prisma ORM</li>
-                <li>Schema design</li>
-              </ul>
+            <div class="spec__row">
+              <dt>Data</dt>
+              <dd>
+                <ul class="inline-list">
+                  <li>PostgreSQL</li>
+                  <li>MongoDB</li>
+                  <li>Prisma ORM</li>
+                  <li>Schema design</li>
+                </ul>
+              </dd>
             </div>
-            <div class="stack-group">
-              <h3 class="stack-group__title">Infrastructure &amp; DevOps</h3>
-              <ul>
-                <li>AWS EC2</li>
-                <li>Docker</li>
-                <li>nginx (reverse proxy, TLS)</li>
-                <li>PM2</li>
-                <li>DNS configuration</li>
-                <li>Linux</li>
-                <li>Git &amp; GitHub</li>
-              </ul>
+            <div class="spec__row">
+              <dt>Infrastructure &amp; DevOps</dt>
+              <dd>
+                <ul class="inline-list">
+                  <li>AWS EC2</li>
+                  <li>Docker</li>
+                  <li>nginx (reverse proxy, TLS)</li>
+                  <li>PM2</li>
+                  <li>DNS configuration</li>
+                  <li>Linux</li>
+                  <li>Git &amp; GitHub</li>
+                </ul>
+              </dd>
             </div>
-            <div class="stack-group">
-              <h3 class="stack-group__title">Commerce &amp; CMS</h3>
-              <ul>
-                <li>WordPress</li>
-                <li>WooCommerce</li>
-                <li>Payment gateway integration</li>
-                <li>Technical &amp; local SEO</li>
-              </ul>
+            <div class="spec__row">
+              <dt>Commerce &amp; CMS</dt>
+              <dd>
+                <ul class="inline-list">
+                  <li>WordPress</li>
+                  <li>WooCommerce</li>
+                  <li>Payment gateway integration</li>
+                  <li>Technical &amp; local SEO</li>
+                </ul>
+              </dd>
             </div>
-          </div>
+          </dl>
         </div>
       </section>
 
@@ -345,11 +379,12 @@
       <section id="working-together" class="section section--alt">
         <div class="container">
           <div class="section__head">
-            <span class="section__eyebrow">Working together</span>
-            <h2 class="section__title">Three ways people usually bring me in</h2>
+            <div>
+              <h2 class="section__title">Three ways people usually bring me in</h2>
+            </div>
             <p class="section__lede">
-              Whichever it is, you'll get a straight answer early — including
-              if I think you don't need what you're asking for.
+              Whichever it is, you'll get a straight answer early. That
+              includes being told you don't need what you're asking for.
             </p>
           </div>
 
@@ -357,22 +392,25 @@
             <article class="engagement">
               <h3 class="engagement__title">Full-stack product build</h3>
               <p class="engagement__desc">
-                A working application from an empty repository — data model,
-                API, interface, deployment, and the handover so you're not
-                locked to me.
+                A working application from an empty repository. Data model,
+                API, interface, deployment, and a proper handover so you're
+                never tied to me.
               </p>
               <ul class="engagement__list">
                 <li>Internal tools and admin systems</li>
                 <li>Ordering and inventory platforms</li>
                 <li>Customer accounts and role-based access</li>
               </ul>
+              <p class="engagement__cta">
+                <a class="tlink" href="#contact" data-wa="Hi Mudassir, I'd like to talk about building an application for my business." target="_blank" rel="noopener noreferrer">Ask about a build<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+              </p>
             </article>
 
             <article class="engagement">
               <h3 class="engagement__title">Ecommerce build and integration</h3>
               <p class="engagement__desc">
-                A storefront that takes money reliably — catalogue, checkout,
-                payment gateway, and the boring configuration that determines
+                A storefront that takes money reliably. Catalogue, checkout,
+                payment gateway, and the dull configuration that decides
                 whether orders actually arrive.
               </p>
               <ul class="engagement__list">
@@ -380,13 +418,16 @@
                 <li>Payment gateway setup</li>
                 <li>Product catalogue and order flow</li>
               </ul>
+              <p class="engagement__cta">
+                <a class="tlink" href="#contact" data-wa="Hi Mudassir, I'd like to talk about an online store." target="_blank" rel="noopener noreferrer">Ask about a store<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+              </p>
             </article>
 
             <article class="engagement">
               <h3 class="engagement__title">Take over an existing codebase</h3>
               <p class="engagement__desc">
-                Someone built it and left. I'll get it running, document what's
-                there, fix what's broken, and get it deployed somewhere you
+                Someone built it and left. I'll get it running, document
+                what's there, fix what's broken, and deploy it somewhere you
                 control.
               </p>
               <ul class="engagement__list">
@@ -394,17 +435,20 @@
                 <li>Bug fixing and feature work</li>
                 <li>Ongoing maintenance</li>
               </ul>
+              <p class="engagement__cta">
+                <a class="tlink" href="#contact" data-wa="Hi Mudassir, I need help with an existing codebase someone else built." target="_blank" rel="noopener noreferrer">Ask about a takeover<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg></a>
+              </p>
             </article>
           </div>
 
           <div class="engage__note">
             <p>
-              Not sure which of these you need? Describe the problem in plain
-              language and I'll tell you what it'd actually take.
+              Not sure which one you need? Describe the problem in plain words
+              and I'll tell you what it would actually take.
             </p>
-            <div class="hero__actions" style="margin-top: 0" id="engage-actions">
-              <a class="btn btn--primary" href="#contact">Start a project →</a>
-              <!-- WhatsApp button injected by JS when WHATSAPP_NUMBER is set -->
+            <div class="engage__actions">
+              <a class="btn btn--wa" href="#contact" data-wa target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>Message me on WhatsApp</a>
+              <a class="btn btn--secondary" href="mailto:mudassirudd@gmail.com">Email me</a>
             </div>
           </div>
         </div>
@@ -413,98 +457,72 @@
       <!-- ===================== TESTIMONIALS =====================
            This whole section stays hidden until the TESTIMONIALS array at the
            bottom of this file has at least one entry. Only put real, approved
-           quotes in it — see testimonial-outreach.md for how to collect them. -->
+           quotes in it. See testimonial-outreach.md for how to collect them. -->
       <section id="testimonials" class="section" hidden>
         <div class="container">
           <div class="section__head">
-            <span class="section__eyebrow">Testimonials</span>
-            <h2 class="section__title">What clients said</h2>
+            <div>
+              <h2 class="section__title">What clients said</h2>
+            </div>
           </div>
           <div class="quotes" id="quotes"></div>
         </div>
       </section>
 
       <!-- ===================== CONTACT ===================== -->
-      <section id="contact" class="section section--alt">
-        <div class="container">
-          <div class="contact__grid">
-            <div>
-              <div class="section__head">
-                <span class="section__eyebrow">Contact</span>
-                <h2 class="section__title">Start a project</h2>
-                <p class="section__lede">
-                  Tell me what you're trying to build or fix. If I'm not the
-                  right person, I'll say so and point you somewhere better.
-                </p>
-              </div>
+      <section id="contact" class="section section--ink">
+        <div class="container contact__grid">
+          <div class="contact__intro">
+            <h2 class="section__title">Start a project</h2>
+            <p class="contact__lede">
+              Tell me what you're trying to build or fix. If I'm not the right
+              person, I'll say so and point you to someone better.
+            </p>
+          </div>
 
-              <div class="contact__channels" id="channels">
+          <!-- No form. WhatsApp is the primary channel; the message is
+               pre-filled so nobody has to work out how to open. -->
+          <div class="contact__panel">
+            <a class="btn btn--wa btn--block" href="#contact" data-wa target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>Message me on WhatsApp</a>
+
+            <p class="contact__note">
+              It's the fastest way to reach me. The message opens pre-filled,
+              so just hit send and tell me what you're working on. I reply
+              within 24 hours, usually sooner.
+            </p>
+
+            <div class="contact__hint">
+              <p>Helps me answer properly:</p>
+              <ul>
+                <li>What the business does</li>
+                <li>What you're doing now that isn't working</li>
+                <li>Roughly when you need it</li>
+              </ul>
+            </div>
+
+            <ul class="channels" id="channels">
+              <li>
                 <a class="channel" href="mailto:mudassirudd@gmail.com">
-                  <svg class="channel__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
-                    <rect x="2" y="4" width="20" height="16" rx="2" />
-                    <path d="m2 7 10 6 10-6" />
-                  </svg>
-                  <span>
-                    <span class="channel__label">Email</span>
-                    <span class="channel__value">mudassirudd@gmail.com</span>
-                  </span>
+                  <span class="channel__label">Email</span>
+                  <span class="channel__value">mudassirudd@gmail.com</span>
+                  <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5" /></svg>
                 </a>
-
+              </li>
+              <li>
                 <a class="channel" href="https://www.linkedin.com/in/mudassirudd/" target="_blank" rel="noopener noreferrer">
-                  <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM2.4 21h5.16V9.5H2.4V21zM9.5 9.5H14v1.57h.07c.63-1.13 2.17-2.32 4.46-2.32 4.77 0 5.65 3.02 5.65 6.95V21h-5.16v-4.95c0-1.18-.02-2.7-1.68-2.7-1.68 0-1.94 1.29-1.94 2.62V21H9.5V9.5z" />
-                  </svg>
-                  <span>
-                    <span class="channel__label">LinkedIn</span>
-                    <span class="channel__value">/in/mudassirudd</span>
-                  </span>
+                  <span class="channel__label">LinkedIn</span>
+                  <span class="channel__value">/in/mudassirudd</span>
+                  <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg>
                 </a>
-
+              </li>
+              <li>
                 <a class="channel" href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">
-                  <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                    <path d="M12 .5a12 12 0 0 0-3.79 23.4c.6.11.82-.26.82-.58v-2.2c-3.34.73-4.04-1.42-4.04-1.42-.55-1.4-1.34-1.77-1.34-1.77-1.09-.75.08-.73.08-.73 1.21.08 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.13-.3-.54-1.52.11-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.29-1.55 3.3-1.23 3.3-1.23.65 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.62-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.82.58A12 12 0 0 0 12 .5z" />
-                  </svg>
-                  <span>
-                    <span class="channel__label">GitHub</span>
-                    <span class="channel__value">@mudassirudd</span>
-                  </span>
+                  <span class="channel__label">GitHub</span>
+                  <span class="channel__value">@mudassirudd</span>
+                  <svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5" /></svg>
                 </a>
-              </div>
-            </div>
-
-            <!-- No form. WhatsApp is the primary channel; the message is
-                 pre-filled so nobody has to work out how to open. -->
-            <div class="form">
-              <h3 class="cta-panel__title">Message me on WhatsApp</h3>
-              <p class="cta-panel__text">
-                Fastest way to reach me. The message opens pre-filled — just hit
-                send and tell me what you're working on.
-              </p>
-
-              <a
-                class="btn btn--primary btn--block btn--wa"
-                id="wa-primary"
-                href="#"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18">
-                  <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" />
-                </svg>
-                Open WhatsApp
-              </a>
-
-              <p class="form__note">I reply within 24 hours, usually sooner.</p>
-
-              <div class="cta-panel__hint">
-                <strong>Helps me answer properly:</strong>
-                <ul>
-                  <li>What the business does</li>
-                  <li>What you're doing now that isn't working</li>
-                  <li>Roughly when you need it</li>
-                </ul>
-              </div>
-            </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -514,17 +532,12 @@
          WhatsApp button on desktop. Hrefs are set from CONFIG. -->
     <div class="sticky-cta" id="sticky-cta" hidden>
       <a class="sticky-cta__btn sticky-cta__btn--call" id="sticky-call" href="#">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" />
         </svg>
         Call
       </a>
-      <a class="sticky-cta__btn sticky-cta__btn--wa" id="sticky-wa" href="#" target="_blank" rel="noopener noreferrer">
-        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-          <path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" />
-        </svg>
-        WhatsApp
-      </a>
+      <a class="sticky-cta__btn sticky-cta__btn--wa" id="sticky-wa" href="#" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>WhatsApp</a>
     </div>
 
     <!-- ===================== FOOTER ===================== -->
@@ -532,13 +545,10 @@
       <div class="container">
         <div class="footer__top">
           <div>
-            <a class="nav__brand" href="#top">
-              <span class="nav__brand-mark" aria-hidden="true">M</span>
-              <span>Mudassir Uddin Ahmed</span>
-            </a>
+            <a class="nav__brand" href="#top">Mudassir Uddin Ahmed</a>
             <p class="footer__tagline">
-              Software engineer. Full-stack web applications, deployed and
-              maintained.
+              Software engineer. I build full-stack web applications, put them
+              online and keep them running.
             </p>
           </div>
 
@@ -564,19 +574,18 @@
         </div>
 
         <p class="footer__fundamentals">
-          <strong>Fundamentals —</strong>
-          freeCodeCamp JavaScript Algorithms &amp; Data Structures: seven
-          certification projects including a cash register, Roman numeral
-          converter, regex telephone validator and a text-based RPG. Plus
+          <strong>Fundamentals:</strong>
+          freeCodeCamp JavaScript Algorithms &amp; Data Structures, seven
+          certification projects including a cash register, a Roman numeral
+          converter, a regex telephone validator and a text-based RPG. Plus
           <em>50 Days · 50 Projects</em>, a fifty-day vanilla JavaScript build
-          streak. All listed in the
+          streak. They're all in the
           <a href="#work">learning archive</a> above and on
           <a href="https://github.com/mudassirudd" target="_blank" rel="noopener noreferrer">GitHub</a>.
         </p>
 
         <div class="footer__bottom">
           <span>© <span id="year">2026</span> Mudassir Uddin Ahmed</span>
-          <span>Built by hand. No framework, no build step.</span>
         </div>
       </div>
     </footer>
@@ -600,7 +609,9 @@
         email: 'mudassirudd@gmail.com',
       }
 
-      const WHATSAPP_URL = `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(CONFIG.whatsappMessage)}`
+      const waUrl = (msg) =>
+        `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`
+      const WHATSAPP_URL = waUrl(CONFIG.whatsappMessage)
 
       /* ======================================================================
        * HOW TO ADD A PROJECT
@@ -639,15 +650,13 @@
           type: 'Inventory & ordering system',
           client: 'Grocery retail',
           year: 2025,
-          // TODO: verify the EC2 instance is still up. If it isn't, change
-          // this to 'offline' and the live button disappears automatically.
           status: 'live',
           summary:
             'A full-stack grocery management system replacing a paper stock book and WhatsApp order messages. Every order is now a record with a status, a timestamp and a customer attached to it.',
           contribution:
-            'Sole engineer — data model, API, interface, server setup and ongoing maintenance.',
+            'Sole engineer. I did the data model, API, interface and server setup, and I still maintain it.',
           capabilities: [
-            'Role-based access — admin and staff see different things',
+            'Role-based access, so admin and staff see different things',
             'Order lifecycle from placed to fulfilled',
             'Product catalogue with stock levels',
           ],
@@ -657,7 +666,7 @@
             repo: 'https://github.com/mudassirudd/kirana',
             live: 'http://35.169.120.101/',
           },
-          linkNote: 'Live instance is self-hosted over plain HTTP — your browser will warn you.',
+          linkNote: 'The live instance is self-hosted over plain HTTP, so your browser will warn you.',
           group: 'client',
         },
         {
@@ -670,18 +679,17 @@
           year: 2026,
           status: 'live',
           summary:
-            'Replaced a brochure site whose price list was uploaded as images in 2020. Every job used to start with a phone call and too many ended in a pricing dispute — now the customer configures the job and sees the price before they order.',
+            'I replaced a brochure site whose price list was uploaded as images in 2020. Every job used to start with a phone call, and too many ended in an argument about price. Now the customer configures the job and sees the price before they order.',
           contribution:
-            'Sole engineer — catalogue, quoting logic, admin dashboard, deployment, and full handover. Built in under four weeks.',
+            'Sole engineer. Catalogue, quoting logic, admin dashboard, deployment and a full handover, built in under four weeks.',
           capabilities: [
-            '220+ product catalogue with live quoting — price updates as size, quantity and finish change',
+            '220+ product catalogue with live quoting. The price updates as size, quantity and finish change',
             'Guest checkout, no account required',
             'Admin dashboard covering the full order workflow, usable from a phone',
             'Customer order history and automated status emails from the business’s own domain',
           ],
           outcome:
             'Domain, source code, database and customer records all sit in accounts registered to the client. No retainer, no licence, no dependency on me.',
-          // TODO: add the actual stack (framework, database, email provider).
           stack: ['Custom build', 'Admin dashboard', 'Transactional email', 'Managed infrastructure'],
           links: {
             caseStudy: 'work/xpress-printing/',
@@ -694,20 +702,19 @@
           image: 'img/shams-convention.jpg',
           alt: 'Shams Convention venue site home page',
           name: 'Shams Convention',
-          type: 'Venue site — conversion & SEO',
+          type: 'Venue site, conversion and SEO',
           client: 'Convention centre, Hyderabad',
           year: 2026,
           status: 'live',
           summary:
             'Venue sites get found and then lose people. This one is built around a single job: getting someone from "this looks nice" to "is my date free?" in as few taps as possible.',
-          contribution: 'Sole designer and developer — design, build and SEO, end to end.',
+          contribution: 'Sole designer and developer. Design, build and SEO, start to finish.',
           capabilities: [
             'Call and WhatsApp buttons pinned to every mobile screen',
             'Floating WhatsApp chat that follows you on desktop',
             'Structured data for the venue, FAQ and gallery',
             'Open Graph, sitemap and clean URLs from day one',
           ],
-          // TODO: confirm the platform and add it here (WordPress? Next.js? static?)
           stack: ['Schema.org JSON-LD', 'Open Graph', 'Technical SEO', 'Mobile-first'],
           links: { live: 'https://shamsconventionhyd.in/' },
           group: 'featured',
@@ -722,9 +729,9 @@
           year: 2026,
           status: 'live',
           summary:
-            'A place everyone in the Old City knows by name, and search engines barely knew at all. Built the site, then took on the SEO, then the Google Business Profile — which is what actually ranks for "biryani near me" — and now run their paid search.',
+            'A place everyone in the Old City knows by name, and search engines barely knew at all. I built the site, then took on the SEO, then the Google Business Profile (that\'s what actually ranks for "biryani near me"). Now I run their paid search too.',
           contribution:
-            'Sole developer and marketer — site, on-page SEO, Google Business Profile, Google Ads.',
+            'Sole developer and marketer: the site, on-page SEO, Google Business Profile and Google Ads.',
           capabilities: [
             'Site structured around local search intent',
             'Google Business Profile cleaned up and maintained',
@@ -732,7 +739,10 @@
             'Google Ads campaign, managed and tuned',
           ],
           outcome:
-            'Cost per click came down from ₹12.58 to ₹2.71 after rebuilding the keyword set. Whether that turns into people walking through the door is the number I am actually judging it on.',
+            'Cost per click came down from ₹12.58 to ₹2.71 after rebuilding the keyword set. Whether that turns into people walking through the door is the number I\'m really judging it on.',
+          // Optional: animates the "to" figure in the outcome text down
+          // from "from" when it scrolls into view. Static text stays correct.
+          outcomeCount: { prefix: '₹', from: 12.58, to: 2.71 },
           stack: ['Local SEO', 'Google Business Profile', 'Google Ads', 'Technical SEO'],
           links: {
             caseStudy: 'work/madina-hotel/',
@@ -752,7 +762,7 @@
           year: 2024,
           status: 'live',
           summary:
-            'WooCommerce storefront taking real payments — custom theme, payment gateway integration and a catalogue the owner maintains without developer access.',
+            'A WooCommerce store taking real payments. Custom theme, payment gateway, and a catalogue the owner runs without needing a developer.',
           stack: ['WordPress', 'WooCommerce', 'PHP'],
           links: { caseStudy: 'work/vapesoz/', live: 'https://vapesoz.com/' },
           group: 'client',
@@ -782,8 +792,8 @@
           year: 2024,
           status: 'live',
           summary:
-            'A product showcase with an enquiry flow that turns a browse into a conversation — and a catalogue the owner runs entirely on their own.',
-          contribution: 'Sole designer and developer — brand presentation, catalogue and enquiry flow.',
+            'A product showcase with an enquiry flow that turns browsing into a conversation. The owner runs the catalogue entirely on their own.',
+          contribution: 'Sole designer and developer. Brand presentation, catalogue and enquiry flow.',
           capabilities: [
             'Product showcase built around the range, not a template',
             'Order enquiry flow straight from the product',
@@ -875,7 +885,14 @@
         archived: 'Archived',
       }
 
-      function statusPill(status) {
+      /* One icon set: 20px grid, 1.5 stroke, styled by .icon in styles.css */
+      const ICON = {
+        arrow: '<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10h12M11 5l5 5-5 5"/></svg>',
+        ext: '<svg class="icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 13 13 7M8 7h5v5"/></svg>',
+      }
+
+
+      function statusLabel(status) {
         if (!status || !STATUS_LABEL[status]) return ''
         return `<span class="status status--${status}">${STATUS_LABEL[status]}</span>`
       }
@@ -887,106 +904,109 @@
           .join('')}</div>`
       }
 
-      /* Builds the 1-3 action buttons for a project. The case study is always
-         the primary action when one exists — a live link you don't fully
-         control should never be the only way in. */
-      function actions(project, { compact = false } = {}) {
+      /* Text link with the right icon: → for pages on this site, ↗ for
+         anything that leaves it. */
+      function tlink(href, label) {
+        const icon = isExternal(href) ? ICON.ext : ICON.arrow
+        return `<a class="tlink" href="${esc(href)}"${linkAttrs(href)}>${esc(label)}${icon}</a>`
+      }
+
+      /* The 1-4 actions for a project. The case study always comes first
+         when one exists — a live link you don't fully control should never
+         be the only way in. On featured rows the first action is a button;
+         everything else is a text link. */
+      function actions(project, { featured = false } = {}) {
         const { links = {}, status } = project
-        const size = compact ? ' btn--sm' : ''
         const out = []
 
-        if (links.caseStudy) {
-          out.push(
-            `<a class="btn btn--primary${size}" href="${esc(links.caseStudy)}">Read the case study</a>`
-          )
-        }
-        if (links.demoVideo) {
-          out.push(
-            `<a class="btn btn--secondary${size}" href="${esc(links.demoVideo)}"${linkAttrs(links.demoVideo)}>Watch demo</a>`
-          )
-        }
+        if (links.caseStudy) out.push([links.caseStudy, 'Read the case study'])
+        if (links.demoVideo) out.push([links.demoVideo, 'Watch demo'])
         // A live link is only offered when the project is actually live.
         if (links.live && status !== 'offline' && status !== 'private') {
-          const label = links.caseStudy ? 'Live site ↗' : 'Open ↗'
-          const cls = out.length ? 'btn--secondary' : 'btn--primary'
-          out.push(
-            `<a class="btn ${cls}${size}" href="${esc(links.live)}"${linkAttrs(links.live)}>${label}</a>`
-          )
+          out.push([links.live, links.caseStudy ? 'Live site' : 'Visit the site'])
         }
-        if (links.repo) {
-          out.push(
-            `<a class="btn btn--ghost${size}" href="${esc(links.repo)}"${linkAttrs(links.repo)}>Source ↗</a>`
-          )
-        }
+        if (links.repo) out.push([links.repo, 'Source'])
         if (status === 'offline' || status === 'private') {
-          out.push(
-            `<a class="btn btn--ghost${size}" href="#contact">Demo on request</a>`
-          )
+          out.push(['#contact', 'Demo on request'])
         }
-        return out.join('')
+
+        return out
+          .map(([href, label], i) =>
+            featured && i === 0
+              ? `<a class="btn btn--secondary" href="${esc(href)}"${linkAttrs(href)}>${esc(label)}</a>`
+              : tlink(href, label)
+          )
+          .join('')
       }
 
-      /* Screenshot of the live site. For work that IS a website, this does
-         more persuading than any paragraph. */
-      function shot(p) {
-        if (!p.image) return ''
+      /* View transition name: links a project's name here to the title on
+         its case study page, so the name glides into place on navigation. */
+      const vtName = (p) =>
+        p.links && p.links.caseStudy ? ` style="view-transition-name: p-${esc(p.id)}"` : ''
+
+      /* Outcome text, with the counted figure wrapped for initCountUp().
+         The static text is the final value, so no-JS and screen readers
+         always get the right number. */
+      function outcomeHtml(p) {
+        const text = esc(p.outcome)
+        const c = p.outcomeCount
+        if (!c) return text
+        const final = `${c.prefix || ''}${c.to.toFixed(2)}`
+        return text.replace(
+          esc(final),
+          `<span class="count" data-from="${c.from}" data-to="${c.to}" data-prefix="${esc(c.prefix || '')}" aria-hidden="true">${esc(final)}</span><span class="sr-only">${esc(final)}</span>`
+        )
+      }
+
+      /* Featured: an editorial row — big screenshot, text beside it. */
+      function feature(p) {
         const href = (p.links && (p.links.caseStudy || p.links.live)) || ''
-        const img = `<img src="${esc(p.image)}" alt="${esc(p.alt || p.name)}" loading="lazy" decoding="async" width="1120" height="700" />`
-        return href
-          ? `<a class="pcard__shot" href="${esc(href)}"${linkAttrs(href)} tabindex="-1" aria-hidden="true">${img}</a>`
-          : `<div class="pcard__shot">${img}</div>`
-      }
-
-      function card(p) {
-        const client = p.client
-          ? `<p class="pcard__client">${esc(p.client)} · ${esc(p.year)}</p>`
-          : `<p class="pcard__client">${esc(p.year)}</p>`
-
-        const contribution = p.contribution
-          ? `<p class="pcard__contribution">${esc(p.contribution)}</p>`
+        const img = p.image
+          ? `<img src="${esc(p.image)}" alt="${esc(p.alt || p.name)}" loading="lazy" decoding="async" width="1120" height="700" />`
           : ''
+        const media = !p.image
+          ? ''
+          : href
+            ? `<a class="feature__media" href="${esc(href)}"${linkAttrs(href)} tabindex="-1" aria-hidden="true">${img}</a>`
+            : `<div class="feature__media">${img}</div>`
 
-        const note = p.linkNote
-          ? `<p class="pcard__note">${esc(p.linkNote)}</p>`
-          : ''
+        // Name first, then one plain line of context under it. No label
+        // stacked above the heading.
+        const meta = [p.type, p.client, p.year].filter(Boolean).map(esc).join(' · ')
 
         return `
-          <article class="pcard" id="${esc(p.id)}">
-            ${shot(p)}
-            <div class="pcard__body">
-              <div class="pcard__top">
-                <span class="pcard__type">${esc(p.type)}</span>
-                ${statusPill(p.status)}
-              </div>
-              <h4 class="pcard__name">${esc(p.name)}</h4>
-              ${client}
-              <p class="pcard__summary">${esc(p.summary)}</p>
-              ${contribution}
+          <article class="feature reveal${p.image ? '' : ' feature--text'}" id="${esc(p.id)}">
+            ${media}
+            <div class="feature__body">
+              <h4 class="feature__name"${vtName(p)}>${esc(p.name)}</h4>
+              <p class="feature__client">${meta} ${statusLabel(p.status)}</p>
+              <p class="feature__summary">${esc(p.summary)}</p>
+              ${p.contribution ? `<p class="feature__contribution">${esc(p.contribution)}</p>` : ''}
+              ${p.outcome ? `<p class="feature__outcome">${outcomeHtml(p)}</p>` : ''}
               ${chips(p.stack)}
-              <div class="pcard__actions">${actions(p)}</div>
-              ${note}
+              <div class="feature__actions">${actions(p, { featured: true })}</div>
+              ${p.linkNote ? `<p class="feature__note">${esc(p.linkNote)}</p>` : ''}
             </div>
           </article>`
       }
 
-      function row(p) {
-        const client = p.client ? ` · ${esc(p.client)}` : ''
+      /* Client & product: one ruled line each. */
+      function entry(p) {
+        const type = [p.type, p.client].filter(Boolean).map(esc).join(' · ')
         const thumb = p.image
-          ? `<div class="prow__thumb"><img src="${esc(p.image)}" alt="${esc(p.alt || p.name)}" loading="lazy" decoding="async" width="1120" height="700" /></div>`
-          : '<div class="prow__thumb prow__thumb--none" aria-hidden="true"></div>'
+          ? `<div class="entry__thumb"><img src="${esc(p.image)}" alt="${esc(p.alt || p.name)}" loading="lazy" decoding="async" width="1120" height="700" /></div>`
+          : '<div class="entry__thumb entry__thumb--none" aria-hidden="true"></div>'
         return `
-          <article class="prow" id="${esc(p.id)}">
+          <article class="entry" id="${esc(p.id)}">
             ${thumb}
-            <div class="prow__main">
-              <div class="prow__head">
-                <h4 class="prow__name">${esc(p.name)}</h4>
-                <span class="prow__type">${esc(p.type)}${client}</span>
-                <span class="prow__year">${esc(p.year)}</span>
-              </div>
-              <p class="prow__summary">${esc(p.summary)}</p>
-              ${chips(p.stack)}
-              <div class="prow__actions">${actions(p, { compact: true })}</div>
+            <div class="entry__main">
+              <h4 class="entry__name"${vtName(p)}>${esc(p.name)}</h4>
+              <p class="entry__type">${type}</p>
+              <p class="entry__summary">${esc(p.summary)}</p>
+              <div class="entry__links">${actions(p)}</div>
+              ${p.linkNote ? `<p class="entry__note">${esc(p.linkNote)}</p>` : ''}
             </div>
+            <span class="entry__year">${esc(p.year)}</span>
           </article>`
       }
 
@@ -997,15 +1017,14 @@
         mount.innerHTML = GROUPS.map(({ id, label, layout }) => {
           const items = PROJECTS.filter((p) => p.group === id)
           if (!items.length) return ''
-          const body = items.map(layout === 'card' ? card : row).join('')
-          const wrap =
-            layout === 'card'
-              ? `<div class="featured-grid">${body}</div>`
-              : `<div>${body}</div>`
+          const body = items.map(layout === 'card' ? feature : entry).join('')
           return `
             <div class="work__group">
-              <h3 class="work__group-title">${esc(label)}</h3>
-              ${wrap}
+              <h3 class="work__group-title">
+                <span>${esc(label)}</span>
+                <span class="work__group-count">${String(items.length).padStart(2, '0')}</span>
+              </h3>
+              <div>${body}</div>
             </div>`
         }).join('')
       }
@@ -1034,13 +1053,13 @@
         mount.innerHTML = [...bySource.entries()]
           .map(
             ([source, list]) => `
-              <h3 class="work__group-title" style="margin-top:var(--sp-4)">${esc(source)} (${list.length})</h3>
+              <h3 class="archive__group-title">${esc(source)} (${list.length})</h3>
               <ul class="archive__list">
                 ${list
                   .map((p) => {
                     const url = (p.links && p.links.live) || ''
                     const title = url
-                      ? `<a class="archive__title" href="${esc(url)}"${linkAttrs(url)}>${esc(p.name)} ↗</a>`
+                      ? `<a class="archive__title" href="${esc(url)}"${linkAttrs(url)}>${esc(p.name)}${isExternal(url) ? ICON.ext : ICON.arrow}</a>`
                       : `<span class="archive__title">${esc(p.name)}</span>`
                     return `<li>${title}<br />${esc(p.summary || '')}</li>`
                   })
@@ -1067,7 +1086,6 @@
             : esc(t.role)
           return `
             <figure class="quote">
-              <div class="quote__mark" aria-hidden="true">&ldquo;</div>
               <blockquote class="quote__text">${esc(t.text)}</blockquote>
               <figcaption class="quote__cite">
                 <span class="quote__author">${esc(t.author)}</span>
@@ -1091,47 +1109,43 @@
           }
           const about = $('#about-links')
           if (about) {
-            about.insertAdjacentHTML(
-              'afterbegin',
-              `<a class="btn btn--secondary btn--sm" href="${esc(CONFIG.resumeUrl)}" target="_blank" rel="noopener noreferrer">Download résumé</a>`
-            )
+            about.insertAdjacentHTML('afterbegin', tlink(CONFIG.resumeUrl, 'Download résumé'))
           }
           const footer = $('#footer-elsewhere')
           if (footer) {
             footer.insertAdjacentHTML(
               'beforeend',
-              `<li><a href="${esc(CONFIG.resumeUrl)}" target="_blank" rel="noopener noreferrer">Résumé ↗</a></li>`
+              `<li><a href="${esc(CONFIG.resumeUrl)}" target="_blank" rel="noopener noreferrer">Résumé</a></li>`
             )
           }
         }
 
+        // Every WhatsApp CTA on the page is marked with data-wa. An empty
+        // value uses the default message; a value is its own pre-filled
+        // message (e.g. the "Ask about a store" link). No number set means
+        // no WhatsApp CTAs at all.
+        document.querySelectorAll('[data-wa]').forEach((a) => {
+          if (!CONFIG.whatsappNumber) {
+            a.hidden = true
+            return
+          }
+          a.href = waUrl(a.dataset.wa || CONFIG.whatsappMessage)
+        })
+
         if (!CONFIG.whatsappNumber) return
-
-        // Primary CTA panel in the contact section
-        const waPrimary = $('#wa-primary')
-        if (waPrimary) waPrimary.href = WHATSAPP_URL
-
-        // Secondary button inside "Working together"
-        const engage = $('#engage-actions')
-        if (engage) {
-          engage.insertAdjacentHTML(
-            'beforeend',
-            `<a class="btn btn--secondary" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">Message on WhatsApp</a>`
-          )
-        }
 
         // First entry in the channel list
         const channels = $('#channels')
         if (channels) {
           channels.insertAdjacentHTML(
             'afterbegin',
-            `<a class="channel" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">
-               <svg class="channel__icon" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z"/></svg>
-               <span>
+            `<li>
+               <a class="channel" href="${WHATSAPP_URL}" target="_blank" rel="noopener noreferrer">
                  <span class="channel__label">WhatsApp</span>
                  <span class="channel__value">+91 83748 23091</span>
-               </span>
-             </a>`
+                 ${ICON.ext}
+               </a>
+             </li>`
           )
         }
       }
@@ -1190,7 +1204,7 @@
         })
 
         // The menu is only a menu on small screens; reset when it's not.
-        const mq = window.matchMedia('(min-width: 721px)')
+        const mq = window.matchMedia('(min-width: 900px)')
         const sync = () => {
           if (mq.matches) setOpen(false)
         }
@@ -1222,6 +1236,64 @@
         sections.forEach((s) => observer.observe(s))
       }
 
+      /* --- Motion -------------------------------------------------------- */
+      const reducedMotion = () =>
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches
+
+      // Featured rows ease in once as they reach the viewport.
+      function initReveal() {
+        const items = [...document.querySelectorAll('.reveal')]
+        if (!('IntersectionObserver' in window) || reducedMotion()) {
+          items.forEach((el) => el.classList.add('is-in'))
+          return
+        }
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (!e.isIntersecting) return
+              e.target.classList.add('is-in')
+              io.unobserve(e.target)
+            })
+          },
+          { rootMargin: '0px 0px -10% 0px' }
+        )
+        items.forEach((el) => io.observe(el))
+      }
+
+      // Counts a figure from data-from down/up to data-to, once, on view.
+      function initCountUp() {
+        const items = [...document.querySelectorAll('.count')]
+        if (!items.length || !('IntersectionObserver' in window) || reducedMotion()) return
+
+        const run = (el) => {
+          const from = parseFloat(el.dataset.from)
+          const to = parseFloat(el.dataset.to)
+          const prefix = el.dataset.prefix || ''
+          const duration = 900
+          const start = performance.now()
+          const tick = (now) => {
+            const t = Math.min((now - start) / duration, 1)
+            const eased = 1 - Math.pow(1 - t, 3)
+            el.textContent = prefix + (from + (to - from) * eased).toFixed(2)
+            if (t < 1) requestAnimationFrame(tick)
+          }
+          el.textContent = prefix + from.toFixed(2)
+          requestAnimationFrame(tick)
+        }
+
+        const io = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((e) => {
+              if (!e.isIntersecting) return
+              io.unobserve(e.target)
+              run(e.target)
+            })
+          },
+          { threshold: 0.6 }
+        )
+        items.forEach((el) => io.observe(el))
+      }
+
       /* --- Go ------------------------------------------------------------ */
       renderWork()
       renderArchive()
@@ -1230,6 +1302,8 @@
       initStickyCta()
       initNav()
       initScrollSpy()
+      initReveal()
+      initCountUp()
       $('#year').textContent = new Date().getFullYear()
     </script>
   </body>

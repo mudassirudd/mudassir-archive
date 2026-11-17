@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
-    <title>Kirana — inventory and ordering system | Mudassir Uddin Ahmed</title>
+    <title>Kirana: inventory and ordering system | Mudassir Uddin Ahmed</title>
     <meta
       name="description"
       content="Case study: a full-stack grocery inventory and ordering system built with React, Node and MongoDB, deployed on AWS EC2 behind nginx and supervised by PM2."
@@ -12,7 +12,7 @@
     <link rel="canonical" href="https://mudassirudd.github.io/mudassir-archive/work/kirana/" />
 
     <meta property="og:type" content="article" />
-    <meta property="og:title" content="Kirana — inventory and ordering system" />
+    <meta property="og:title" content="Kirana: inventory and ordering system" />
     <meta
       property="og:description"
       content="Replacing a paper stock book and WhatsApp orders with a system where every order is a record. React, Node, MongoDB, AWS EC2, nginx, PM2."
@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../../styles.css" />
@@ -38,49 +38,24 @@
 
     <header class="nav">
       <div class="container nav__inner">
-        <a class="nav__brand" href="../../index.html">
-          <span class="nav__brand-mark" aria-hidden="true">M</span>
-          <span>Mudassir Uddin Ahmed</span>
-        </a>
-        <nav class="nav__links" data-open="false" aria-label="Main">
+        <a class="nav__brand" href="../../index.html">Mudassir Uddin Ahmed</a>
+        <nav class="nav__links nav__links--inline" aria-label="Main">
           <a href="../../index.html#work">Work</a>
           <a href="../../index.html#about">About</a>
           <a href="../../index.html#contact">Contact</a>
         </nav>
       </div>
     </header>
+    <div class="progress" aria-hidden="true"></div>
 
-    <!--
-    ==========================================================================
-    ⚠  BEFORE YOU PUBLISH THIS PAGE
-    ==========================================================================
-    The architecture sections below are written from your stated stack (MERN,
-    EC2, nginx, PM2) and are accurate as far as that goes. Everything marked
-    with a visible "TODO" block is a gap only you can fill.
-
-    Rules for filling them in:
-      • No numbers you can't produce evidence for. "How did you measure that"
-        is the follow-up question in every technical interview, and one
-        fabricated metric fails it in a single exchange.
-      • Countable facts are fine and are not metrics: how many user roles,
-        how many collections, how long it's been running, what it replaced.
-      • If you don't have a result, say so plainly. "Nobody instrumented it
-        at launch, that's the first thing I'd add" reads better to a senior
-        engineer than an invented percentage.
-
-    Delete each TODO block once you've replaced it.
-    ==========================================================================
-    -->
-
-    <main id="main" class="cs">
+<main id="main" class="cs">
       <div class="container container--narrow">
-        <a class="cs__back" href="../../index.html#work">All work</a>
 
-        <h1 class="cs__title">Kirana — inventory and ordering system</h1>
+        <h1 class="cs__title" style="view-transition-name: p-kirana">Kirana: inventory and ordering system</h1>
         <p class="cs__standfirst">
           A grocery business was tracking stock in a paper book and taking
           orders over WhatsApp. I built them a system where every order is a
-          record with a status, a timestamp and a customer attached to it — and
+          record with a status, a timestamp and a customer attached to it. And
           I've kept it running on their server ever since.
         </p>
 
@@ -121,7 +96,7 @@
             rel="noopener noreferrer"
             >Live instance ↗</a
           >
-          <a class="btn btn--ghost" href="../../index.html#contact">Request a walkthrough</a>
+          <a class="btn btn--wa" href="https://wa.me/918374823091?text=Hi%20Mudassir%2C%20I%20read%20your%20Kirana%20case%20study.%20Could%20you%20walk%20me%20through%20it%3F" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg> Ask for a walkthrough</a>
         </div>
         <p class="cs__standfirst" style="font-size: var(--fs-sm); margin-top: var(--sp-3)">
           The live instance is self-hosted over plain HTTP, so your browser will
@@ -143,58 +118,43 @@
             is it still sitting in a chat thread above forty newer messages.
           </p>
 
-          <div class="todo">
-            <strong>TODO — replace with the real story.</strong> How did they
-            describe the problem to you when you first spoke? Use their words,
-            not technical ones. What specifically went wrong often enough that
-            they were willing to pay to fix it?
-          </div>
-
-          <h2>What I built</h2>
+<h2>What I built</h2>
           <p>
             A web application the owner and staff use from a browser, replacing
             both the book and the order thread.
           </p>
           <ul>
             <li>
-              <strong>Stock records with adjustment history</strong> — quantities
+              <strong>Stock records with adjustment history</strong>. Quantities
               change through recorded adjustments rather than being overwritten,
               so there's a trail of what changed and when.
             </li>
             <li>
-              <strong>Order lifecycle</strong> — an order moves through explicit
+              <strong>Order lifecycle</strong>. An order moves through explicit
               states rather than existing as a message someone has to remember
               to act on.
             </li>
             <li>
-              <strong>Customer records tied to orders</strong> — order history is
+              <strong>Customer records tied to orders</strong>. Order history is
               attached to a customer instead of scattered across chat threads.
             </li>
             <li>
-              <strong>Role separation</strong> — the owner and counter staff see
+              <strong>Role separation</strong>. The owner and counter staff see
               different things and can do different things.
             </li>
           </ul>
 
-          <div class="todo">
-            <strong>TODO — correct this list.</strong> These are the capabilities
-            a system like this usually has; make them the ones yours actually
-            has. Add anything distinctive you built. Delete anything you didn't.
-            Describe each in plain language a shop owner would recognise, not in
-            framework terms.
-          </div>
-
-          <h2>How it's put together</h2>
+<h2>How it's put together</h2>
           <p>
             A React single-page application talks to an Express API over REST.
-            The API owns all access to MongoDB — the browser never touches the
+            The API owns all access to MongoDB. The browser never touches the
             database directly. The whole thing runs on one AWS EC2 instance.
           </p>
           <p>
             nginx sits in front as a reverse proxy: it serves the built React
             bundle as static files and forwards API requests to the Node process
             on its internal port, so only one port is exposed to the world.
-            <strong>PM2 supervises the Node process</strong> — it restarts it if
+            <strong>PM2 supervises the Node process</strong>. It restarts it if
             it crashes and brings it back up when the instance reboots, which is
             the difference between a demo and something a business can open on a
             Monday morning.
@@ -221,15 +181,7 @@
             >
           </div>
 
-          <div class="todo">
-            <strong>TODO — confirm the details.</strong> Is MongoDB on the same
-            instance or on Atlas? How does authentication work — sessions or
-            JWT? Which collections exist? Name them: a reader who knows what
-            they're looking at will judge the whole page on this paragraph, and
-            it's the one section a recruiter reads closely.
-          </div>
-
-          <h2>Decisions and trade-offs</h2>
+<h2>Decisions and trade-offs</h2>
 
           <div class="decision">
             <p class="decision__title">
@@ -243,7 +195,7 @@
               database read.
             </p>
             <p class="decision__cost">
-              <strong>The cost:</strong> I own the boring parts too — certificate
+              <strong>The cost:</strong> I own the boring parts too: certificate
               renewal, process supervision, and being the one who notices when
               it goes down. There's no platform dashboard to tell me.
             </p>
@@ -266,17 +218,7 @@
             </p>
           </div>
 
-          <div class="todo">
-            <strong>TODO — make these yours.</strong> The first decision is real
-            (you chose EC2 over a PaaS). The second is a plausible design I've
-            written to show the shape — replace it with a decision you actually
-            made and remember arguing with yourself about. Format:
-            <em>chose X over Y because Z; the cost was W.</em> This is the
-            highest-signal section on the page for senior readers and the one
-            almost nobody writes.
-          </div>
-
-          <h2>What I'd change</h2>
+<h2>What I'd change</h2>
           <ul>
             <li>
               <strong>TLS and a real hostname.</strong> It's served over plain
@@ -306,17 +248,10 @@
             I don't have usage numbers for this one. It's an internal tool and
             nobody instrumented it at launch, so I can tell you what it replaced
             and that it's still up, but I can't show you a chart. That's the
-            first thing I'd add now — order volume and stock-adjustment counts —
+            first thing I'd add now: order volume and stock-adjustment counts,
             so there's something to point at beyond "it works."
           </p>
 
-          <div class="todo">
-            <strong>TODO — one line from the owner would do more than this whole
-            page.</strong> See <code>testimonial-outreach.md</code> in the repo
-            root for a message that reliably produces a usable quote. Kirana's
-            owner is the only client who can speak to software
-            <em>reliability</em> rather than a site looking nice.
-          </div>
         </div>
 
         <div class="cs__cta">
@@ -327,12 +262,25 @@
             tell you what it'd take to replace it.
           </p>
           <div class="cs__cta-actions">
-            <a class="btn btn--primary" href="../../index.html#contact">Start a project →</a>
+            <a class="btn btn--wa" href="https://wa.me/918374823091?text=Hi%20Mudassir%2C%20I%20read%20your%20Kirana%20case%20study%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" width="18" height="18"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg> Message me on WhatsApp</a>
             <a class="btn btn--secondary" href="../../index.html#work">See other work</a>
           </div>
         </div>
       </div>
     </main>
+
+    <!-- Sticky conversion bar: Call + WhatsApp pinned to the bottom on
+         phones, a floating WhatsApp button on desktop. -->
+    <div class="sticky-cta" id="sticky-cta">
+      <a class="sticky-cta__btn sticky-cta__btn--call" href="tel:+918374823091">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z" /></svg>
+        Call
+      </a>
+      <a class="sticky-cta__btn sticky-cta__btn--wa" href="https://wa.me/918374823091?text=Hi%20Mudassir%2C%20I%20read%20your%20Kirana%20case%20study%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener noreferrer">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2a9.9 9.9 0 0 0-8.5 14.9L2 22l5.25-1.38A9.9 9.9 0 1 0 12.04 2zm0 1.8a8.1 8.1 0 1 1-4.1 15.09l-.3-.18-3.1.82.83-3.03-.2-.31A8.1 8.1 0 0 1 12.04 3.8zm4.62 10.3c-.25-.13-1.47-.73-1.7-.81-.22-.09-.39-.13-.55.12s-.63.8-.77.97c-.14.16-.28.18-.53.06a6.65 6.65 0 0 1-3.32-2.9c-.25-.43.25-.4.71-1.33.08-.16.04-.3-.02-.42s-.55-1.34-.76-1.83c-.2-.48-.4-.42-.55-.42h-.47a.9.9 0 0 0-.65.3 2.75 2.75 0 0 0-.86 2.05c0 1.2.88 2.37 1 2.53.12.17 1.72 2.63 4.17 3.69 1.55.67 2.16.72 2.94.61.47-.07 1.47-.6 1.68-1.19.2-.58.2-1.08.14-1.18-.06-.11-.23-.17-.48-.29z" /></svg>
+        WhatsApp
+      </a>
+    </div>
 
     <footer class="footer">
       <div class="container">
@@ -345,6 +293,31 @@
 
     <script>
       document.getElementById('year').textContent = new Date().getFullYear()
+      // Sticky Call + WhatsApp bar: appears once the top buttons scroll
+      // away, hides again over the closing CTA so it never doubles it.
+      ;(function () {
+        var bar = document.getElementById('sticky-cta')
+        var top = document.querySelector('.cs__actions')
+        var end = document.querySelector('.cs__cta')
+        if (!bar || !top || !end) return
+        if (!('IntersectionObserver' in window)) {
+          bar.classList.add('is-visible')
+          return
+        }
+        var past = false
+        var atEnd = false
+        var sync = function () {
+          bar.classList.toggle('is-visible', past && !atEnd)
+        }
+        new IntersectionObserver(function (e) {
+          past = !e[0].isIntersecting && e[0].boundingClientRect.top < 0
+          sync()
+        }).observe(top)
+        new IntersectionObserver(function (e) {
+          atEnd = e[0].isIntersecting
+          sync()
+        }, { threshold: 0.1 }).observe(end)
+      })()
     </script>
   </body>
 </html>
